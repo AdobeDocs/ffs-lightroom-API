@@ -1,13 +1,14 @@
 {
   "openapi": "3.1",
   "info": {
-    "title": "Lightroom API Reference",
-    "description": "API Reference",
-    "version": "1.0"
+    "title": "Firefly Lightroom API Reference",
+    "description": "Programmatically apply Lightroom settings and image adjustments to photos using Adobe's cloud-based image processing services",
+    "version": "1.0.0"
   },
   "servers": [
     {
-      "url": "https://image.adobe.io"
+      "url": "https://image.adobe.io",
+      "description": "Adobe Image Service API endpoint"
     }
   ],
   "tags": [
@@ -19,8 +20,8 @@
   "paths": {
     "/lrService/presets": {
       "post": {
-        "summary": "Apply Preset",
-        "description": "This endpoint initiates an asynchronous job to apply a preset on an image. To check the status of this process, utilize the `Get Status` endpoint.",
+        "summary": "Apply Lightroom preset",
+        "description": "Apply a Lightroom preset to an image. This creates an asynchronous job that processes the image with the specified preset settings. Use the Get Status endpoint to monitor job progress and retrieve results.",
         "operationId": "presets",
         "tags": ["Lightroom Services"],
         "parameters": [
@@ -150,8 +151,8 @@
     },
     "/lrService/xmp": {
       "post": {
-        "summary": "Apply XMP",
-        "description": "This endpoint initiates an asynchronous job to apply an XMP setting to an image. To check the status of this process, utilize the `Get Status` endpoint.",
+        "summary": "Apply XMP settings",
+        "description": "Apply XMP (Extensible Metadata Platform) settings to an image. XMP allows you to embed metadata and editing instructions directly into image files. This creates an asynchronous job for processing.",
         "operationId": "xmp",
         "tags": ["Lightroom Services"],
         "parameters": [
@@ -281,8 +282,8 @@
     },
     "/lrService/autoStraighten": {
       "post": {
-        "summary": "Auto Straighten",
-        "description": "Initiates an asynchronous job to auto straighten an image. To check the status of this process, utilize the `Get Status` endpoint.",
+        "summary": "Auto-straighten image",
+        "description": "Automatically detect and correct image rotation/alignment issues. Uses Adobe's AI to analyze the image and apply the optimal straightening adjustment. Creates an asynchronous job for processing.",
         "operationId": "autoStraighten",
         "tags": ["Lightroom Services"],
         "parameters": [
@@ -412,8 +413,8 @@
     },
     "/lrService/autoTone": {
       "post": {
-        "summary": "Auto Tone",
-        "description": "Initiates an asynchronous job to apply Auto Tone to an image. To check the status of this process, utilize the `Get Status` endpoint.",
+        "summary": "Auto-adjust image tone",
+        "description": "Automatically adjust exposure, contrast, highlights, shadows, whites, and blacks in an image using Adobe's intelligent tone mapping. Creates an asynchronous job for processing.",
         "operationId": "autoTone",
         "tags": ["Lightroom Services"],
         "parameters": [
@@ -543,8 +544,8 @@
     },
     "/lrService/edit": {
       "post": {
-        "summary": "Apply Edits",
-        "description": "This endpoint enables you to programmatically adjust values within the Lightroom Edit Panel and apply them to an image. To check the status of this process, utilize the `Get Status` endpoint.",
+        "summary": "Apply manual image edits",
+        "description": "Apply custom image adjustments including exposure, contrast, color grading, and other Lightroom editing parameters. Provides precise control over image processing parameters. Creates an asynchronous job for processing.",
         "operationId": "edit",
         "tags": ["Lightroom Services"],
         "parameters": [
@@ -674,8 +675,8 @@
     },
     "/lrService/status/{jobId}": {
       "get": {
-        "summary": "Get Status",
-        "description": "This endpoint returns the status of a job. Please expand `200 Successful operation` under `Responses` to see more details of the status returned.",
+        "summary": "Get job status",
+        "description": "Retrieve the current status and results of an asynchronous image processing job. Returns job progress, completion status, output URLs, and any error information.",
         "operationId": "acrstatus",
         "tags": ["Lightroom Services"],
         "parameters": [
