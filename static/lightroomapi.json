@@ -10,13 +10,19 @@
       "url": "https://image.adobe.io"
     }
   ],
-  "security": [],
+  "tags": [
+    {
+      "name": "Lightroom Services",
+      "description": "Core Lightroom image processing services"
+    }
+  ],
   "paths": {
     "/lrService/presets": {
       "post": {
         "summary": "Apply Preset",
         "description": "This endpoint initiates an asynchronous job to apply a preset on an image. To check the status of this process, utilize the `Get Status` endpoint.",
         "operationId": "presets",
+        "tags": ["Lightroom Services"],
         "parameters": [
           {
             "name": "Authorization",
@@ -59,7 +65,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "./acr/post_presets.schema.json"
+                "$ref": "#/components/schemas/PostPresetsSchema"
               }
             }
           },
@@ -71,7 +77,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./acr/api_response_success_schema.json"
+                  "$ref": "#/components/schemas/ApiResponseSuccessSchema"
                 }
               }
             }
@@ -81,7 +87,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./api_response_400_error_schema.json"
+                  "$ref": "#/components/schemas/ApiResponse400ErrorSchema"
                 }
               }
             }
@@ -91,7 +97,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./api_response_402_error_schema.json"
+                  "$ref": "#/components/schemas/ApiResponse402ErrorSchema"
                 }
               }
             }
@@ -101,7 +107,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./api_response_403_error_schema.json"
+                  "$ref": "#/components/schemas/ApiResponse403ErrorSchema"
                 }
               }
             }
@@ -111,7 +117,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./api_response_404_error_schema.json"
+                  "$ref": "#/components/schemas/ApiResponse404ErrorSchema"
                 }
               }
             }
@@ -121,7 +127,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./api_response_409_error_schema.json"
+                  "$ref": "#/components/schemas/ApiResponse409ErrorSchema"
                 }
               }
             }
@@ -131,7 +137,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "./api_response_410_error_schema.json"
+                  "$ref": "#/components/schemas/ApiResponse410ErrorSchema"
                 }
               }
             }
@@ -142,5 +148,330 @@
         }
       }
     }
-  }
+  },
+  "components": {
+    "schemas": {
+      "PostPresetsSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "post_presets.schema.json",
+        "title": "post_presets",
+        "description": "Initiates an asynchronous job to apply a preset on an image",
+        "type": "object",
+        "required": [
+          "inputs",
+          "outputs"
+        ],
+        "properties": {
+          "inputs": {
+            "type": "object",
+            "minProperties": 2,
+            "description": "The input assets for your call",
+            "required": [
+              "source",
+              "presets"
+            ],
+            "properties": {
+              "source": {
+                "$ref": "#/components/schemas/InputsSchema"
+              },
+              "presets": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "$ref": "#/components/schemas/InputsSchema"
+                }
+              }
+            }
+          },
+          "outputs": {
+            "$ref": "#/components/schemas/OutputsSchema"
+          }
+        }
+      },
+      "ApiResponseSuccessSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response.schema.json",
+        "title": "api_response",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "_links": {
+            "type": "object",
+            "description": "_links hrefs the client can use to get status of the asynchronous job.",
+            "properties": {
+              "self": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "format": "string",
+                    "description": "The link that client can use to get status of the asynchronous job",
+                    "example": "https://image.adobe.io/lrService/status/<:jobId>"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ApiResponse400ErrorSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response_400.schema.json",
+        "title": "api_response_400",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string",
+            "description": "A summary of the error.",
+            "example": "InputValidationError"
+          },
+          "type": {
+            "type": "string",
+            "format": "string",
+            "description": "The error type.",
+            "example": "InputValidationError"
+          },
+          "code": {
+            "type": "string",
+            "format": "string",
+            "description": "The error code.",
+            "example": "400"
+          },
+          "details": {
+            "type": "object",
+            "description": "Further details of the error.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name for the detailed error.",
+                "example": "adobe, external, dropbox, azure"
+              },
+              "reason": {
+                "type": "string",
+                "description": "An explanation of the error."
+              }
+            }
+          }
+        }
+      },
+      "ApiResponse402ErrorSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response_402.schema.json",
+        "title": "api_response_402",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string",
+            "description": "A summary of the error.",
+            "example": "Trial Limit Exceeded Error"
+          },
+          "type": {
+            "type": "string",
+            "format": "string",
+            "description": "The error type.",
+            "example": "TrialLimitExceededError"
+          },
+          "code": {
+            "type": "string",
+            "format": "string",
+            "description": "The error code."
+          },
+          "details": {
+            "type": "object",
+            "description": "Further details of the error.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name for the detailed error.",
+                "example": "adobe, external, dropbox, azure"
+              },
+              "reason": {
+                "type": "string",
+                "description": "An explanation of the error."
+              }
+            }
+          }
+        }
+      },
+      "ApiResponse403ErrorSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response_403.schema.json",
+        "title": "api_response_403",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string",
+            "description": "A summary of the error.",
+            "example": "Unable to upload asset"
+          },
+          "type": {
+            "type": "string",
+            "format": "string",
+            "description": "The error type.",
+            "example": "FileOverwriteError"
+          },
+          "code": {
+            "type": "string",
+            "format": "string",
+            "description": "The error code."
+          },
+          "details": {
+            "type": "object",
+            "description": "Further details of the error.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name for the detailed error.",
+                "example": "Asset Upload Error"
+              },
+              "reason": {
+                "type": "string",
+                "description": "An explanation of the error."
+              }
+            }
+          }
+        }
+      },
+      "ApiResponse404ErrorSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response_404.schema.json",
+        "title": "api_response_404",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string",
+            "description": "A summary of the error.",
+            "example": "Unable to upload asset"
+          },
+          "type": {
+            "type": "string",
+            "format": "string",
+            "description": "The error type.",
+            "example": "FileOverwriteError"
+          },
+          "code": {
+            "type": "string",
+            "format": "string",
+            "description": "The error code."
+          },
+          "details": {
+            "type": "object",
+            "description": "Further details of the error.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name for the detailed error.",
+                "example": "Asset Upload Error"
+              },
+              "reason": {
+                "type": "string",
+                "description": "An explanation of the error."
+              }
+            }
+          }
+        }
+      },
+      "ApiResponse409ErrorSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response_409.schema.json",
+        "title": "api_response_409",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string",
+            "description": "A summary of the error.",
+            "example": "Unable to upload asset"
+          },
+          "type": {
+            "type": "string",
+            "format": "string",
+            "description": "The error type.",
+            "example": "FileOverwriteError"
+          },
+          "code": {
+            "type": "string",
+            "format": "string",
+            "description": "The error code."
+          },
+          "details": {
+            "type": "object",
+            "description": "Further details of the error.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "The name for the detailed error.",
+                "example": "Asset Upload Error"
+              },
+              "reason": {
+                "type": "string",
+                "description": "An explanation of the error."
+              }
+            }
+          }
+        }
+      },
+      "ApiResponse410ErrorSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "$id": "api_response_410.schema.json",
+        "title": "api_response_410",
+        "description": "Provides API response",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "format": "string",
+            "description": "A short, human-readable summary of the problem",
+            "example": "Asset Link Invalid"
+          },
+          "type": {
+            "type": "string",
+            "format": "string",
+            "description": "A machine-readable error type",
+            "example": "FileLinkInvalidError"
+          },
+          "code": {
+            "type": "string",
+            "format": "string",
+            "description": "A machine-readable error code",
+            "example": 410
+          },
+          "details": {
+            "type": "object",
+            "description": "Further descriptions of the exact error where details is substituted for a specific issue.",
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name for the detailed error.",
+                "example": "Asset Download Error"
+              },
+              "reason": {
+                "type": "string",
+                "description": "Details of error reason.",
+                "example": "Unable to download the input href. The link is either invalid or has expired."
+              }
+            }
+          }
+        }
+      },
+      "InputsSchema": {
+        "type": "object",
+        "description": "Input asset definition"
+      },
+      "OutputsSchema": {
+        "type": "object",
+        "description": "Output asset definition"
+      }
+    }
+  },
+  "security": []
 }
