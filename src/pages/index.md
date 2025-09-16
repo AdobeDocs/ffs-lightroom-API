@@ -33,8 +33,6 @@ twitter:
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
-![Hero image](./hero.png)
-
 # Adobe Lightroom API - Firefly Services
 
 Unlock the potential of Lightroom through an easy-to-use RESTful API.
@@ -71,7 +69,7 @@ Explore our tutorials page for comprehensive guidance.
 
 ### API References
 
-[Firefly APIs](../pages/api/index.md)
+[Firefly APIs](../pages/api/)
 
 Integrate generative AI into your creative workflows.
 
