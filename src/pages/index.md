@@ -1,84 +1,86 @@
 ---
-title: Overview - Cat Analytics
-description: This is the overview page of Cat Analytics
+title: Adobe Lightroom API Overview
+description: This is the overview page of Adobe Lightroom API
+keywords:
+  - Lightroom API guides
+  - Lightroom API Overview
+  - Lightroom API documentation
+  - Lightroom API usage examples
+  - Lightroom API SDK
+  - Lightroom APIs
+  - Lightroom API
+  - Lightroom API SDK
+  - Lightroom Node.js SDK
+  - Lightroom API tutorials
+  - Lightroom API How-to guides
+  - Lightroom API code sample
+  - Lightroom API Tutorials
+  - Lightroom API Developer documentation
+  - Getting started with Lightroom API
+  - Lightroom API reference
 contributors:
-  - https://github.com/icaraps 
+  - 'https://github.com/khound'
+  - 'https://github.com/archyposada'
+hideBreadcrumbNav: true
+og:
+  title: Adobe Lightroom API Overview
+  description: This is the overview page of Adobe Lightroom API
+twitter:
+  card: summary
+  title: Adobe Lightroom API Overview
+  description: This is the overview page of Adobe Lightroom API
 ---
 
-<Hero slots="heading, text"/>
+<Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
-# Cat Analytics API
+# Adobe Lightroom API - Firefly Services
 
-Cat Product API offers limitless ways to integrate your most important customer data into key business processes. Cat Product API offer limitless ways.
-
-<Resources slots="heading, links"/>
-
-#### Resources
-
-* [Quickstart Guide](https://developer.adobe.com)
-* [Cat Analytics Github Repo](https://github.com/AdobeDocs/dev-site)
+Unlock the potential of Lightroom through an easy-to-use RESTful API.
 
 ## Overview
 
-This documentation provides instructions for Catt Analytics 2.0 APIs. For working with Cat Analytics APIs, see [Cat Analytics API Documentation](https://github.com/AdobeDocs/dev-site).
+Welcome to the Adobe Lightroom API, now integrated into Firefly Services. Our API follows REST-like principles, utilizing standard HTTP response codes, verbs, and authentication methods that return JSON-encoded responses. While the examples provided are in cURL, feel free to develop your application in any preferred language.
 
-The Cat Analytics APIs are a collection of APIs that power Cat Analytics products like Cat Workspace.
-The APIs allow for the creation of data rich user interfaces that you can use to manipulate and integrate data.
-You can also create reports to explore, get insights, or answer important questions about your data.
+This guide will assist you in:
+
+- Creating a project within the Adobe Developer Console
+- Obtaining and authenticating your credentials
+- Programmatically generating XMP files from slider values and accessing other Lightroom features
+- Constructing personalized workflows by chaining API calls to various endpoints within the Firefly Services APIs
+- Developing event-driven applications through Adobe I/O Events
 
 ## Discover
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Get Started
 
-[Quickstart Guide](guides/)
+[Getting Started Guide](../pages/getting_started/)
 
-Get started with the Cat Analytics APIs.
+Get started with the Adobe Firefly Services.
+
+<DiscoverBlock slots="link, text"/>
+
+[Tutorials](../pages/guides/)
+
+Explore our tutorials page for comprehensive guidance.
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### Guides
-
-[Calculated Metrics API](guides/dummy_metrics_api/)
-
-Returns information on the user's company that is necessary for making other Cat Analytics API calls.
-
-<DiscoverBlock slots="link, text"/>
-
-[Segments API](guides/dummy_oauth_client/)
-
-Provides configuration guidance and best practices for the /segments endpoint.
-
-<DiscoverBlock slots="link, text"/>
-
-[Reporting Guide API](guides/dummy_using_postman/)
-
-Provides configuration guidance and best practices for the /reports endpoint.
-
-<DiscoverBlock slots="link, text"/>
-
-[Migrating from 1.4 to 2.0](guides/migrating/)
-
-For help migrating from the 1.4 versions of the Analytics API to the newer and more capable /reports API.
-
-<DiscoverBlock width="100%" slots="heading, link, text"/>
-
 ### API References
 
-[Try the API](api/)
+[Firefly APIs](../pages/api/)
 
-Try the Analytics API with Swagger UI. Explore, make calls, with full endpoint descriptions.
+Integrate generative AI into your creative workflows.
 
-## Contributing
+<DiscoverBlock slots="link, text"/>
 
-We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions
-or deletions for this documentation, check out the source from [this github repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).
+[Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/api/?aio_internal)
 
-## API Requests & Rate Limits
+Unlock the potential of Photoshop in the cloud.
 
-The timeout for API requests through adobe.io is currently *60 seconds*.
+<DiscoverBlock slots="link, text"/>
 
-The default rate limit for an Cat Analytics Company is *120 requests per minute*. (The limit is enforced as *12 requests every 6 seconds*).
-When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`.
+[Content Tagging API](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/content-commerce-ai/overview.html)
+
+Leverage Content Tagging API to craft personalized experiences.
