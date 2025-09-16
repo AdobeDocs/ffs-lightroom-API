@@ -990,7 +990,7 @@
             "type": "string",
             "format": "string",
             "description": "A summary of the error.",
-            "example": "InputValidationError"
+            "example": "Input Validation Error"
           },
           "type": {
             "type": "string",
@@ -1010,8 +1010,7 @@
             "properties": {
               "name": {
                 "type": "string",
-                "description": "The name for the detailed error.",
-                "example": "adobe, external, dropbox, azure"
+                "description": "The name for the detailed error."
               },
               "reason": {
                 "type": "string",
