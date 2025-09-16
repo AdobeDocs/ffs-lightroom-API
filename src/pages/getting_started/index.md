@@ -6,5 +6,3 @@ contributors:
   - https://github.com/aeabreu-hub
 ---
 # Authentication
-
-
