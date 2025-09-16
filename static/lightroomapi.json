@@ -913,41 +913,41 @@
         "properties": {
           "jobId": {
             "type": "string",
-            "description": "The job identifier.",
+            "description": "The job identifier."
           },
           "status": {
             "type": "string",
-            "description": "The current status of the job.",,
+            "description": "The current status of the job.",
             "enum": ["pending", "running", "succeeded", "failed"]
           },
           "created": {
             "type": "string",
             "format": "date-time",
-            "description": "When the job was created.",
+            "description": "When the job was created."
           },
           "modified": {
             "type": "string",
             "format": "date-time",
-            "description": "When the job was last modified.",
+            "description": "When the job was last modified."
           },
           "outputs": {
             "type": "array",
-            "description": "Output assets when job is completed.",,
+            "description": "Output assets when job is completed.",
             "items": {
               "$ref": "#/components/schemas/OutputsSchema"
             }
           },
           "error": {
             "type": "object",
-            "description": "Error details if job failed.",,
+            "description": "Error details if job failed.",
             "properties": {
               "code": {
                 "type": "string",
-                "description": "Error code.",
+                "description": "Error code."
               },
               "message": {
                 "type": "string",
-                "description": "Error message.",
+                "description": "Error message."
               }
             }
           }
@@ -970,7 +970,7 @@
                   "href": {
                     "type": "string",
                     "format": "string",
-                    "description": "The link that client can use to get status of the asynchronous job",
+                    "description": "The link that client can use to get status of the asynchronous job.",
                     "example": "https://image.adobe.io/lrService/status/<:jobId>"
                   }
                 }
@@ -1230,11 +1230,11 @@
       },
       "InputsSchema": {
         "type": "object",
-        "description": "Input asset definition.",
+        "description": "Input asset definition."
       },
       "OutputsSchema": {
         "type": "object",
-        "description": "Output asset definition.",
+        "description": "Output asset definition."
       }
     }
   },
