@@ -56,6 +56,21 @@ module.exports = {
         ]
       },
       {
+        title: 'Learn More',
+        path: '/getting_started/quickstart/',
+        header: true,
+        pages: [
+          {
+            title: 'Quick Start',
+            path: '/getting_started/quickstart'
+          },
+          {
+            title: 'General Workflow',
+            path: '/getting_started/general-workflow'
+          }
+        ]
+      },
+      {
         title: 'Guides',
         path: '/guides/',
         header: true,
