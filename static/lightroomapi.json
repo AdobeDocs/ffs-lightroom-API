@@ -1050,8 +1050,7 @@
             "properties": {
               "name": {
                 "type": "string",
-                "description": "The name for the detailed error.",
-                "example": "adobe, external, dropbox, azure"
+                "description": "The name for the detailed error."
               },
               "reason": {
                 "type": "string",
