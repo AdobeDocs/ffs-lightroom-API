@@ -8,13 +8,13 @@
   "servers": [
     {
       "url": "https://image.adobe.io",
-      "description": "Adobe Image Service API endpoint"
+      "description": "Adobe Image Service API endpoint."
     }
   ],
   "tags": [
     {
       "name": "Lightroom Services",
-      "description": "Core Lightroom image processing services"
+      "description": "Core Lightroom image processing services."
     }
   ],
   "paths": {
@@ -27,7 +27,7 @@
         "parameters": [
           {
             "name": "Authorization",
-            "description": "Bearer: ${Authorization Token}",
+            "description": "Bearer token for API authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -36,7 +36,7 @@
           },
           {
             "name": "x-api-key",
-            "description": "API key/client id",
+            "description": "API key or client ID for authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -45,7 +45,7 @@
           },
           {
             "name": "Content-Type",
-            "description": "application/json",
+            "description": "Content type header specifying JSON format.",
             "in": "header",
             "required": true,
             "schema": {
@@ -54,7 +54,7 @@
           },
           {
             "name": "x-gw-ims-org-id",
-            "description": "IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.",
+            "description": "IMS organization ID required only for receiving job status through Adobe I/O Events.",
             "in": "header",
             "required": false,
             "schema": {
@@ -74,7 +74,7 @@
         },
         "responses": {
           "202": {
-            "description": "Successful operation",
+            "description": "Accepted",
             "content": {
               "application/json": {
                 "schema": {
@@ -158,7 +158,7 @@
         "parameters": [
           {
             "name": "Authorization",
-            "description": "Bearer: ${Authorization Token}",
+            "description": "Bearer token for API authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -167,7 +167,7 @@
           },
           {
             "name": "x-api-key",
-            "description": "API key/client id",
+            "description": "API key or client ID for authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -176,7 +176,7 @@
           },
           {
             "name": "Content-Type",
-            "description": "application/json",
+            "description": "Content type header specifying JSON format.",
             "in": "header",
             "required": true,
             "schema": {
@@ -185,7 +185,7 @@
           },
           {
             "name": "x-gw-ims-org-id",
-            "description": "IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.",
+            "description": "IMS organization ID required only for receiving job status through Adobe I/O Events.",
             "in": "header",
             "required": false,
             "schema": {
@@ -205,7 +205,7 @@
         },
         "responses": {
           "202": {
-            "description": "Successful operation",
+            "description": "Accepted",
             "content": {
               "application/json": {
                 "schema": {
@@ -289,7 +289,7 @@
         "parameters": [
           {
             "name": "Authorization",
-            "description": "Bearer: ${Authorization Token}",
+            "description": "Bearer token for API authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -298,7 +298,7 @@
           },
           {
             "name": "x-api-key",
-            "description": "API key/client id",
+            "description": "API key or client ID for authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -307,7 +307,7 @@
           },
           {
             "name": "Content-Type",
-            "description": "application/json",
+            "description": "Content type header specifying JSON format.",
             "in": "header",
             "required": true,
             "schema": {
@@ -316,7 +316,7 @@
           },
           {
             "name": "x-gw-ims-org-id",
-            "description": "IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.",
+            "description": "IMS organization ID required only for receiving job status through Adobe I/O Events.",
             "in": "header",
             "required": false,
             "schema": {
@@ -336,7 +336,7 @@
         },
         "responses": {
           "202": {
-            "description": "Successful operation",
+            "description": "Accepted",
             "content": {
               "application/json": {
                 "schema": {
@@ -420,7 +420,7 @@
         "parameters": [
           {
             "name": "Authorization",
-            "description": "Bearer: ${Authorization Token}",
+            "description": "Bearer token for API authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -429,7 +429,7 @@
           },
           {
             "name": "x-api-key",
-            "description": "API key/client id",
+            "description": "API key or client ID for authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -438,7 +438,7 @@
           },
           {
             "name": "Content-Type",
-            "description": "application/json",
+            "description": "Content type header specifying JSON format.",
             "in": "header",
             "required": true,
             "schema": {
@@ -447,7 +447,7 @@
           },
           {
             "name": "x-gw-ims-org-id",
-            "description": "IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.",
+            "description": "IMS organization ID required only for receiving job status through Adobe I/O Events.",
             "in": "header",
             "required": false,
             "schema": {
@@ -467,7 +467,7 @@
         },
         "responses": {
           "202": {
-            "description": "Successful operation",
+            "description": "Accepted",
             "content": {
               "application/json": {
                 "schema": {
@@ -551,7 +551,7 @@
         "parameters": [
           {
             "name": "Authorization",
-            "description": "Bearer: ${Authorization Token}",
+            "description": "Bearer token for API authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -560,7 +560,7 @@
           },
           {
             "name": "x-api-key",
-            "description": "API key/client id",
+            "description": "API key or client ID for authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -569,7 +569,7 @@
           },
           {
             "name": "Content-Type",
-            "description": "application/json",
+            "description": "Content type header specifying JSON format.",
             "in": "header",
             "required": true,
             "schema": {
@@ -578,7 +578,7 @@
           },
           {
             "name": "x-gw-ims-org-id",
-            "description": "IMS organization ID. This needs to be sent only if it is desirable to receive the job status through Adobe I/O Events.",
+            "description": "IMS organization ID required only for receiving job status through Adobe I/O Events.",
             "in": "header",
             "required": false,
             "schema": {
@@ -598,7 +598,7 @@
         },
         "responses": {
           "202": {
-            "description": "Successful operation",
+            "description": "Accepted",
             "content": {
               "application/json": {
                 "schema": {
@@ -682,7 +682,7 @@
         "parameters": [
           {
             "name": "Authorization",
-            "description": "Bearer: ${Authorization Token}",
+            "description": "Bearer token for API authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -691,7 +691,7 @@
           },
           {
             "name": "x-api-key",
-            "description": "API key/client id",
+            "description": "API key or client ID for authentication.",
             "in": "header",
             "required": true,
             "schema": {
@@ -700,7 +700,7 @@
           },
           {
             "name": "Content-Type",
-            "description": "application/json",
+            "description": "Content type header specifying JSON format.",
             "in": "header",
             "required": true,
             "schema": {
@@ -709,7 +709,7 @@
           },
           {
             "name": "x-gw-ims-org-id",
-            "description": "IMS organization ID. This is only needed if you are trying to receive the job status through Adobe I/O Events.",
+            "description": "IMS organization ID required only for receiving job status through Adobe I/O Events.",
             "in": "header",
             "required": false,
             "schema": {
@@ -719,7 +719,7 @@
           {
             "name": "jobId",
             "in": "path",
-            "description": "The jobId to get status for.",
+            "description": "Unique identifier of the job to retrieve status for.",
             "required": true,
             "schema": {
               "type": "string"
@@ -728,7 +728,7 @@
         ],
         "responses": {
           "200": {
-            "description": "Successful operation",
+            "description": "Success",
             "content": {
               "application/json": {
                 "schema": {
@@ -747,7 +747,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "post_presets.schema.json",
         "title": "post_presets",
-        "description": "Initiates an asynchronous job to apply a preset on an image",
+        "description": "Initiates an asynchronous job to apply a preset on an image.",
         "type": "object",
         "required": [
           "inputs",
@@ -757,7 +757,7 @@
           "inputs": {
             "type": "object",
             "minProperties": 2,
-            "description": "The input assets for your call",
+            "description": "The input assets for your call.",
             "required": [
               "source",
               "presets"
@@ -784,7 +784,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "post_xmp.schema.json",
         "title": "post_xmp",
-        "description": "Initiates an asynchronous job to apply an XMP setting to an image",
+        "description": "Initiates an asynchronous job to apply an XMP setting to an image.",
         "type": "object",
         "required": [
           "inputs",
@@ -794,7 +794,7 @@
           "inputs": {
             "type": "object",
             "minProperties": 2,
-            "description": "The input assets for your call",
+            "description": "The input assets for your call.",
             "required": [
               "source",
               "xmp"
@@ -817,7 +817,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "post_auto_straighten.schema.json",
         "title": "post_auto_straighten",
-        "description": "Initiates an asynchronous job to auto straighten an image",
+        "description": "Initiates an asynchronous job to auto straighten an image.",
         "type": "object",
         "required": [
           "inputs",
@@ -827,7 +827,7 @@
           "inputs": {
             "type": "object",
             "minProperties": 1,
-            "description": "The input assets for your call",
+            "description": "The input assets for your call.",
             "required": [
               "source"
             ],
@@ -846,7 +846,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "post_auto_tone.schema.json",
         "title": "post_auto_tone",
-        "description": "Initiates an asynchronous job to apply Auto Tone to an image",
+        "description": "Initiates an asynchronous job to apply Auto Tone to an image.",
         "type": "object",
         "required": [
           "inputs",
@@ -856,7 +856,7 @@
           "inputs": {
             "type": "object",
             "minProperties": 1,
-            "description": "The input assets for your call",
+            "description": "The input assets for your call.",
             "required": [
               "source"
             ],
@@ -875,7 +875,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "post_image_edit.schema.json",
         "title": "post_image_edit",
-        "description": "Enables programmatic adjustment of values within the Lightroom Edit Panel and apply them to an image",
+        "description": "Enables programmatic adjustment of values within the Lightroom Edit Panel and applies them to an image.",
         "type": "object",
         "required": [
           "inputs",
@@ -885,7 +885,7 @@
           "inputs": {
             "type": "object",
             "minProperties": 2,
-            "description": "The input assets for your call",
+            "description": "The input assets for your call.",
             "required": [
               "source",
               "edits"
@@ -908,46 +908,46 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "get_status.schema.json",
         "title": "get_status",
-        "description": "Returns the status of a job",
+        "description": "Returns the status of a job.",
         "type": "object",
         "properties": {
           "jobId": {
             "type": "string",
-            "description": "The job identifier"
+            "description": "The job identifier.",
           },
           "status": {
             "type": "string",
-            "description": "The current status of the job",
+            "description": "The current status of the job.",,
             "enum": ["pending", "running", "succeeded", "failed"]
           },
           "created": {
             "type": "string",
             "format": "date-time",
-            "description": "When the job was created"
+            "description": "When the job was created.",
           },
           "modified": {
             "type": "string",
             "format": "date-time",
-            "description": "When the job was last modified"
+            "description": "When the job was last modified.",
           },
           "outputs": {
             "type": "array",
-            "description": "Output assets when job is completed",
+            "description": "Output assets when job is completed.",,
             "items": {
               "$ref": "#/components/schemas/OutputsSchema"
             }
           },
           "error": {
             "type": "object",
-            "description": "Error details if job failed",
+            "description": "Error details if job failed.",,
             "properties": {
               "code": {
                 "type": "string",
-                "description": "Error code"
+                "description": "Error code.",
               },
               "message": {
                 "type": "string",
-                "description": "Error message"
+                "description": "Error message.",
               }
             }
           }
@@ -957,7 +957,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response.schema.json",
         "title": "api_response",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "_links": {
@@ -983,7 +983,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response_400.schema.json",
         "title": "api_response_400",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "title": {
@@ -1025,7 +1025,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response_402.schema.json",
         "title": "api_response_402",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "title": {
@@ -1066,7 +1066,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response_403.schema.json",
         "title": "api_response_403",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "title": {
@@ -1107,7 +1107,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response_404.schema.json",
         "title": "api_response_404",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "title": {
@@ -1148,7 +1148,7 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response_409.schema.json",
         "title": "api_response_409",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "title": {
@@ -1189,25 +1189,25 @@
         "$schema": "http://json-schema.org/draft-07/schema#",
         "$id": "api_response_410.schema.json",
         "title": "api_response_410",
-        "description": "Provides API response",
+        "description": "Provides API response.",
         "type": "object",
         "properties": {
           "title": {
             "type": "string",
             "format": "string",
-            "description": "A short, human-readable summary of the problem",
+            "description": "A short, human-readable summary of the problem.",
             "example": "Asset Link Invalid"
           },
           "type": {
             "type": "string",
             "format": "string",
-            "description": "A machine-readable error type",
+            "description": "A machine-readable error type.",
             "example": "FileLinkInvalidError"
           },
           "code": {
             "type": "string",
             "format": "string",
-            "description": "A machine-readable error code",
+            "description": "A machine-readable error code.",
             "example": 410
           },
           "details": {
@@ -1230,11 +1230,11 @@
       },
       "InputsSchema": {
         "type": "object",
-        "description": "Input asset definition"
+        "description": "Input asset definition.",
       },
       "OutputsSchema": {
         "type": "object",
-        "description": "Output asset definition"
+        "description": "Output asset definition.",
       }
     }
   },
