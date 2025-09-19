@@ -31,7 +31,9 @@ twitter:
   description: This is the overview page of Adobe Lightroom API
 ---
 
-<Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
+<Hero slots="image, heading, text" background="rgb(45, 55, 72)"/>
+
+![Lightroom Hero Image](./lightroomHero.jpg)
 
 # Adobe Lightroom API - Firefly Services
 
@@ -41,27 +43,19 @@ Unlock the potential of Lightroom through an easy-to-use RESTful API.
 
 Welcome to the Adobe Lightroom API, now integrated into Firefly Services. Our API follows REST-like principles, utilizing standard HTTP response codes, verbs, and authentication methods that return JSON-encoded responses. While the examples provided are in cURL, feel free to develop your application in any preferred language.
 
-This guide will assist you in:
-
-- Creating a project within the Adobe Developer Console
-- Obtaining and authenticating your credentials
-- Programmatically generating XMP files from slider values and accessing other Lightroom features
-- Constructing personalized workflows by chaining API calls to various endpoints within the Firefly Services APIs
-- Developing event-driven applications through Adobe I/O Events
-
 ## Discover
 
 <DiscoverBlock slots="heading, link, text"/>
 
 ### Get Started
 
-[Getting Started Guide](../pages/getting_started/)
+[Getting Started Guide](./getting_started/)
 
 Get started with the Adobe Firefly Services.
 
 <DiscoverBlock slots="link, text"/>
 
-[Tutorials](../pages/guides/)
+[Tutorials](./guides/)
 
 Explore our tutorials page for comprehensive guidance.
 
