@@ -61,13 +61,15 @@ Explore our tutorials page for comprehensive guidance.
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### API References
+### API references
 
-[Firefly APIs](../pages/api/)
+[Lightroom API](./api/)
 
-Integrate generative AI into your creative workflows.
+Review the API reference documentation for the latest technical details.
 
-<DiscoverBlock slots="link, text"/>
+<DiscoverBlock slots="heading,link, text"/>
+
+### Other related APIs
 
 [Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/api/?aio_internal)
 
