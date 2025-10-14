@@ -66,7 +66,7 @@ module.exports = {
           },
           {
             title: 'Code Samples',
-            path: '/guides/code-samples'
+            path: '/guides/code-sample'
           },
           {
             title: 'Features',
