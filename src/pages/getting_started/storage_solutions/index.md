@@ -1,6 +1,21 @@
 ---
 title: Lightroom File Storage Solutions
 description: This page explains the input and output storage solutions that are acceptable for use with Lightroom API.
+hideBreadcrumbNav: true
+keywords:
+    - Lightroom API
+    - file storage
+    - storage solutions
+    - AWS S3
+    - Google Drive
+    - Azure Blob Storage
+    - Dropbox
+    - pre-signed URL
+    - SAS token
+    - cloud storage
+    - input file
+    - output file
+    - API integration
 ---
 # Input and output file storage
 
