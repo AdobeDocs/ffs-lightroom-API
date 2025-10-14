@@ -1,26 +1,41 @@
 ---
-title: Guides - Cat Analytics
-description: This is the guides overview page of Cat Analytics 
+title: Lightroom Guides Overview
+description: This is an overview of the guides available with Firefly's Lightroom API.
+hideBreadcrumbNav: true
+keywords:
+- lightroom
+- api
+- guides
+- quickstart
+- auto tone
+- auto straighten
+- apply presets
+- apply edits
+- apply xmp
+- webhook
+- adobe io events
+- code samples
+- image processing
+- pre-signed urls
+- authentication
+- job polling
+- integration
+- firefly
 ---
+# Lightroom Guides
 
-# Get Started
+Welcome to the Lightroom API guides. If you're new to the APIs, start with the Quickstart to set up credentials, generate pre-signed URLs, and run your first Lightroom API job. After you've tried the Quickstart, explore the features and code samples to deepen your integration.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam malesuada feugiat enim vel facilisis. Nunc eget enim eu lacus lobortis tincidunt a nec est. Nunc quis sapien quis orci rutrum sollicitudin. Nullam vehicula ultricies mauris, id aliquam justo aliquam vitae. Nam quis tincidunt ante. Curabitur sagittis aliquam elit, at auctor enim maximus et. Praesent in lectus facilisis, tempor magna eget, bibendum est. In quis ornare mi. Donec vestibulum viverra magna, non mollis leo vestibulum sit amet. Aenean euismod nulla augue, sit amet vehicula nibh faucibus vel. Fusce at est lacus. Nullam ante nulla, elementum nec ornare in, placerat luctus enim. Suspendisse vitae lacinia nibh. Pellentesque porta accumsan est at volutpat. Nulla aliquam dictum faucibus.
+## Quick tips
 
-## Authentication
+- Run the Quickstart first to verify credentials and environment before building larger workflows.
+- Use pre-signed URLs for input/output storage to avoid exposing credentials in your application.
+- For production workloads, add robust error handling, retries, logging, and secure secret storage.
 
-Mauris pellentesque ornare nulla. Proin fermentum elementum velit non consequat. Donec euismod nisl sed tellus sagittis, a consequat leo rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse neque justo, porttitor eget volutpat sed, suscipit nec mauris. Etiam nec egestas purus. Praesent suscipit in elit cursus consectetur. Duis blandit pulvinar odio, eget volutpat magna vestibulum interdum. Ut sed ultrices risus, vel gravida nisi. Sed vitae rutrum felis. Aliquam at eros molestie, sagittis augue sed, venenatis erat. Praesent at consectetur tellus, ut vehicula nunc. Pellentesque aliquet condimentum neque, fermentum consequat neque viverra vel. Aliquam accumsan dignissim turpis vitae consequat. Aenean id justo vel diam sollicitudin posuere. Sed eu mauris ac elit porta commodo et varius sem.
+## Guides
 
-## OAuth
+- [Quickstart](./quickstart/) — A step-by-step tutorial to modify your first image using the Lightroom APIs. Includes Bash, JavaScript, and Python examples, plus guidance on pre-signed URLs and job polling.
 
-Donec imperdiet tempus ligula, sit amet pellentesque justo pharetra quis. Duis sed lacus diam. Maecenas sollicitudin diam sit amet pharetra placerat. Aliquam egestas lectus et tellus sagittis, venenatis finibus nisi volutpat. Cras laoreet, nisl sed faucibus laoreet, nibh arcu pretium enim, eget elementum ligula tellus vitae lorem. Aenean consequat in lorem at venenatis. Phasellus consequat dolor in libero vulputate rutrum. Nulla sit amet augue fringilla, elementum libero eget, accumsan velit. Suspendisse et lorem ornare, congue justo vel, ultrices felis. Ut et aliquet eros. Nulla facilisi. Nulla vitae velit a enim egestas eleifend. Etiam malesuada orci non mollis vulputate. Praesent id augue eget sapien lobortis bibendum. Praesent placerat tellus dui, vel facilisis magna condimentum in.
+- [Features (Feature reference)](./features/) — Detailed descriptions of supported Lightroom features such as Auto Tone, Auto Straighten, Apply Presets, Apply Edits, Apply XMP, and webhook integration via Adobe I/O Events.
 
-[Adobe I/O Console](https://console.adobe.io).
-
-<InlineAlert variant="info" slots="text"/>
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna tellus, fringilla sit amet lorem eget, dignissim pellentesque ligula. Donec nec dolor vitae leo laoreet aliquam vehicula at dui. Integer in tortor lacus. Aliquam convallis, lorem ac consectetur sodales, tellus.
-
-## JWT
-
-Donec imperdiet tempus ligula, sit amet pellentesque justo pharetra quis. Duis sed lacus diam. Maecenas sollicitudin diam sit amet pharetra placerat. Aliquam egestas lectus et tellus sagittis, venenatis finibus nisi volutpat. Cras laoreet, nisl sed faucibus laoreet, nibh arcu pretium enim, eget elementum ligula tellus vitae lorem. Aenean consequat in lorem at venenatis. Phasellus consequat dolor in libero vulputate rutrum. Nulla sit amet augue fringilla, elementum libero eget, accumsan velit. Suspendisse et lorem ornare, congue justo vel, ultrices felis. Ut et aliquet eros. Nulla facilisi. Nulla vitae velit a enim egestas eleifend. Etiam malesuada orci non mollis vulputate. Praesent id augue eget sapien lobortis bibendum. Praesent placerat tellus dui, vel facilisis magna condimentum in.
+- [Code Samples](./code-sample/) — Copy-ready curl, Python, and JavaScript snippets for common tasks (Auto Tone, Auto Straighten, Apply Presets, Apply Edits, Apply XMP) and examples for polling job status and triggering events.
