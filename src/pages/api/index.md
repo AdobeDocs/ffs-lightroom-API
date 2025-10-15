@@ -23,4 +23,4 @@ contributors:
   - 'https://github.com/archyposada'
 hideBreadcrumbNav: true
 --- 
-<RedoclyAPIBlock src="/lightroom/lightroomapi.json" hideTryItPanel scrollYOffset={64} generateCodeSamples="languages: [{lang: 'curl'}]" />
+<RedoclyAPIBlock src="/firefly-services/docs/lightroom/lightroomapi.json" hideTryItPanel scrollYOffset={64} generateCodeSamples="languages: [{lang: 'curl'}]" />
