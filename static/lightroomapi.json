@@ -1179,7 +1179,7 @@
             "type": "string",
             "format": "string",
             "description": "A machine-readable error code.",
-            "example": 410
+            "example": "410"
           },
           "details": {
             "type": "object",
@@ -1204,8 +1204,29 @@
         "description": "Input asset definition."
       },
       "OutputsSchema": {
-        "type": "object",
-        "description": "Output asset definition."
+        "type": "array",
+        "description": "Output asset definition.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string",
+              "format": "uri",
+              "description": "Pre-signed URL where the output asset is stored or can be accessed."
+            },
+            "storage": {
+              "type": "string",
+              "description": "Storage type for the output asset."
+            }
+          },
+          "required": ["href", "storage"]
+        },
+        "example": [
+          {
+            "href": "https://SAMPLE-ff-test.s3.amazonaws.com/TEST-asdk/uploads/EXAMPLE",
+            "storage": "external"
+          }
+        ]
       }
     }
   },
