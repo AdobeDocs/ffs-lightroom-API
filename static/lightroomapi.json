@@ -819,17 +819,7 @@
         ],
         "properties": {
           "inputs": {
-            "type": "object",
-            "minProperties": 1,
-            "description": "The input assets for your call.",
-            "required": [
-              "source"
-            ],
-            "properties": {
-              "source": {
-                "$ref": "#/components/schemas/InputsSchema"
-              }
-            }
+            "$ref": "#/components/schemas/InputsSchema"
           },
           "outputs": {
             "$ref": "#/components/schemas/OutputsSchema"
@@ -846,17 +836,7 @@
         ],
         "properties": {
           "inputs": {
-            "type": "object",
-            "minProperties": 1,
-            "description": "The input assets for your call.",
-            "required": [
-              "source"
-            ],
-            "properties": {
-              "source": {
-                "$ref": "#/components/schemas/InputsSchema"
-              }
-            }
+            "$ref": "#/components/schemas/InputsSchema"
           },
           "outputs": {
             "$ref": "#/components/schemas/OutputsSchema"
@@ -1201,7 +1181,23 @@
       },
       "InputsSchema": {
         "type": "object",
-        "description": "Input asset definition."
+        "description": "Input asset definition.",
+        "properties": {
+          "href": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL or pre-signed URL of the input asset."
+          },
+          "storage": {
+            "type": "string",
+            "description": "Storage type for the input asset."
+          }
+        },
+        "required": ["href", "storage"],
+        "example": {
+          "href": "https://SAMPLE-ff-test.s3.amazonaws.com/TEST-asdk/firefly-uploads/EXAMPLE",
+          "storage": "external"
+        }
       },
       "OutputsSchema": {
         "type": "array",
