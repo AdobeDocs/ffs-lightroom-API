@@ -1,5 +1,5 @@
 {
-  "openapi": "3.1",
+  "openapi": "3.1.0",
   "info": {
     "title": "Firefly Lightroom API Reference",
     "description": "Programmatically apply Lightroom settings and image adjustments to photos using Adobe's cloud-based image processing services",
@@ -744,8 +744,6 @@
   "components": {
     "schemas": {
       "PostPresetsSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_presets.schema.json",
         "title": "post_presets",
         "description": "Initiates an asynchronous job to apply a preset on an image.",
         "type": "object",
@@ -781,8 +779,6 @@
         }
       },
       "PostXmpSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_xmp.schema.json",
         "title": "post_xmp",
         "description": "Initiates an asynchronous job to apply an XMP setting to an image.",
         "type": "object",
@@ -814,8 +810,6 @@
         }
       },
       "PostAutoStraightenSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_auto_straighten.schema.json",
         "title": "post_auto_straighten",
         "description": "Initiates an asynchronous job to auto straighten an image.",
         "type": "object",
@@ -825,17 +819,7 @@
         ],
         "properties": {
           "inputs": {
-            "type": "object",
-            "minProperties": 1,
-            "description": "The input assets for your call.",
-            "required": [
-              "source"
-            ],
-            "properties": {
-              "source": {
-                "$ref": "#/components/schemas/InputsSchema"
-              }
-            }
+            "$ref": "#/components/schemas/InputsSchema"
           },
           "outputs": {
             "$ref": "#/components/schemas/OutputsSchema"
@@ -843,8 +827,6 @@
         }
       },
       "PostAutoToneSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_auto_tone.schema.json",
         "title": "post_auto_tone",
         "description": "Initiates an asynchronous job to apply Auto Tone to an image.",
         "type": "object",
@@ -854,17 +836,7 @@
         ],
         "properties": {
           "inputs": {
-            "type": "object",
-            "minProperties": 1,
-            "description": "The input assets for your call.",
-            "required": [
-              "source"
-            ],
-            "properties": {
-              "source": {
-                "$ref": "#/components/schemas/InputsSchema"
-              }
-            }
+            "$ref": "#/components/schemas/InputsSchema"
           },
           "outputs": {
             "$ref": "#/components/schemas/OutputsSchema"
@@ -872,8 +844,6 @@
         }
       },
       "PostImageEditSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_image_edit.schema.json",
         "title": "post_image_edit",
         "description": "Enables programmatic adjustment of values within the Lightroom Edit Panel and applies them to an image.",
         "type": "object",
@@ -887,8 +857,7 @@
             "minProperties": 2,
             "description": "The input assets for your call.",
             "required": [
-              "source",
-              "edits"
+              "source"
             ],
             "properties": {
               "source": {
@@ -905,8 +874,6 @@
         }
       },
       "GetStatusSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "get_status.schema.json",
         "title": "get_status",
         "description": "Returns the status of a job.",
         "type": "object",
@@ -954,8 +921,6 @@
         }
       },
       "ApiResponseSuccessSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response.schema.json",
         "title": "api_response",
         "description": "Provides API response.",
         "type": "object",
@@ -980,8 +945,6 @@
         }
       },
       "ApiResponse400ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_400.schema.json",
         "title": "api_response_400",
         "description": "Provides API response.",
         "type": "object",
@@ -1021,8 +984,6 @@
         }
       },
       "ApiResponse402ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_402.schema.json",
         "title": "api_response_402",
         "description": "Provides API response.",
         "type": "object",
@@ -1061,8 +1022,6 @@
         }
       },
       "ApiResponse403ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_403.schema.json",
         "title": "api_response_403",
         "description": "Provides API response.",
         "type": "object",
@@ -1102,8 +1061,6 @@
         }
       },
       "ApiResponse404ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_404.schema.json",
         "title": "api_response_404",
         "description": "Provides API response.",
         "type": "object",
@@ -1143,8 +1100,6 @@
         }
       },
       "ApiResponse409ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_409.schema.json",
         "title": "api_response_409",
         "description": "Provides API response.",
         "type": "object",
@@ -1184,8 +1139,6 @@
         }
       },
       "ApiResponse410ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_410.schema.json",
         "title": "api_response_410",
         "description": "Provides API response.",
         "type": "object",
@@ -1206,7 +1159,7 @@
             "type": "string",
             "format": "string",
             "description": "A machine-readable error code.",
-            "example": 410
+            "example": "410"
           },
           "details": {
             "type": "object",
@@ -1228,11 +1181,48 @@
       },
       "InputsSchema": {
         "type": "object",
-        "description": "Input asset definition."
+        "description": "Input asset definition.",
+        "properties": {
+          "href": {
+            "type": "string",
+            "format": "uri",
+            "description": "URL or pre-signed URL of the input asset."
+          },
+          "storage": {
+            "type": "string",
+            "description": "Storage type for the input asset."
+          }
+        },
+        "required": ["href", "storage"],
+        "example": {
+          "href": "https://SAMPLE-ff-test.s3.amazonaws.com/TEST-asdk/firefly-uploads/EXAMPLE",
+          "storage": "external"
+        }
       },
       "OutputsSchema": {
-        "type": "object",
-        "description": "Output asset definition."
+        "type": "array",
+        "description": "Output asset definition.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "href": {
+              "type": "string",
+              "format": "uri",
+              "description": "Pre-signed URL where the output asset is stored or can be accessed."
+            },
+            "storage": {
+              "type": "string",
+              "description": "Storage type for the output asset."
+            }
+          },
+          "required": ["href", "storage"]
+        },
+        "example": [
+          {
+            "href": "https://SAMPLE-ff-test.s3.amazonaws.com/TEST-asdk/uploads/EXAMPLE",
+            "storage": "external"
+          }
+        ]
       }
     }
   },
