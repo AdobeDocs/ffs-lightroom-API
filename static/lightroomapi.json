@@ -877,8 +877,7 @@
             "minProperties": 2,
             "description": "The input assets for your call.",
             "required": [
-              "source",
-              "edits"
+              "source"
             ],
             "properties": {
               "source": {
