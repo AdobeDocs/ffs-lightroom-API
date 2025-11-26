@@ -744,8 +744,6 @@
   "components": {
     "schemas": {
       "PostPresetsSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_presets.schema.json",
         "title": "post_presets",
         "description": "Initiates an asynchronous job to apply a preset on an image.",
         "type": "object",
@@ -781,8 +779,6 @@
         }
       },
       "PostXmpSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_xmp.schema.json",
         "title": "post_xmp",
         "description": "Initiates an asynchronous job to apply an XMP setting to an image.",
         "type": "object",
@@ -814,8 +810,6 @@
         }
       },
       "PostAutoStraightenSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_auto_straighten.schema.json",
         "title": "post_auto_straighten",
         "description": "Initiates an asynchronous job to auto straighten an image.",
         "type": "object",
@@ -843,8 +837,6 @@
         }
       },
       "PostAutoToneSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_auto_tone.schema.json",
         "title": "post_auto_tone",
         "description": "Initiates an asynchronous job to apply Auto Tone to an image.",
         "type": "object",
@@ -872,8 +864,6 @@
         }
       },
       "PostImageEditSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "post_image_edit.schema.json",
         "title": "post_image_edit",
         "description": "Enables programmatic adjustment of values within the Lightroom Edit Panel and applies them to an image.",
         "type": "object",
@@ -905,8 +895,6 @@
         }
       },
       "GetStatusSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "get_status.schema.json",
         "title": "get_status",
         "description": "Returns the status of a job.",
         "type": "object",
@@ -954,8 +942,6 @@
         }
       },
       "ApiResponseSuccessSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response.schema.json",
         "title": "api_response",
         "description": "Provides API response.",
         "type": "object",
@@ -980,8 +966,6 @@
         }
       },
       "ApiResponse400ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_400.schema.json",
         "title": "api_response_400",
         "description": "Provides API response.",
         "type": "object",
@@ -1021,8 +1005,6 @@
         }
       },
       "ApiResponse402ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_402.schema.json",
         "title": "api_response_402",
         "description": "Provides API response.",
         "type": "object",
@@ -1061,8 +1043,6 @@
         }
       },
       "ApiResponse403ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_403.schema.json",
         "title": "api_response_403",
         "description": "Provides API response.",
         "type": "object",
@@ -1102,8 +1082,6 @@
         }
       },
       "ApiResponse404ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_404.schema.json",
         "title": "api_response_404",
         "description": "Provides API response.",
         "type": "object",
@@ -1143,8 +1121,6 @@
         }
       },
       "ApiResponse409ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_409.schema.json",
         "title": "api_response_409",
         "description": "Provides API response.",
         "type": "object",
@@ -1184,8 +1160,6 @@
         }
       },
       "ApiResponse410ErrorSchema": {
-        "$schema": "http://json-schema.org/draft-07/schema#",
-        "$id": "api_response_410.schema.json",
         "title": "api_response_410",
         "description": "Provides API response.",
         "type": "object",
