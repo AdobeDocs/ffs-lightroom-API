@@ -65,14 +65,6 @@ module.exports = {
             path: '/guides/quickstart'
           },
           {
-            title: 'Code Samples',
-            path: '/guides/code-sample'
-          },
-          {
-            title: 'Features',
-            path: '/guides/features'
-          },
-          {
             title: 'Use Auto Tone',
             path: '/guides/auto-tone'
           },
