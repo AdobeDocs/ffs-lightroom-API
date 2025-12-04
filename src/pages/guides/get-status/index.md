@@ -12,7 +12,7 @@ keywords:
   - photo automation
   - bulk editing
   - preset management
-- contributors:
+contributors:
   - 'https://github.com/khound'
   - 'https://github.com/archyposada'
 hideBreadcrumbNav: true
