@@ -1,5 +1,5 @@
 ---
-title: Apply Edits
+title: Apply Lightroom API Edits
 description: Learn how to programmatically adjust Lightroom Edit Panel values using Adobe Lightroom API.
 keywords:
   - Adobe Lightroom API
@@ -22,45 +22,101 @@ twitter:
   description: Learn how to programmatically adjust Lightroom Edit Panel values using Adobe Lightroom API.
 ---
 
-# Apply Edits
+# Apply new lightroom edits
 
-This endpoint enables you to programmatically adjust values within the Lightroom Edit Panel and apply them to an image.
+The Apply Edits endpoint allows you to programmatically control the same adjustments you would make manually in the Lightroom Edit Panel. This gives you fine-grained control over values like:
 
-## List of values you can adjust
+- **Exposure controls**: Adjust overall brightness and tonal values.
+- **Color adjustments**: Modify saturation, vibrance, and white balance.
+- **Detail enhancement**: Control sharpness, texture, and clarity.
+- **Noise reduction**: Manage both luminance and color noise.
+- **Creative effects**: Apply vignetting and dehaze adjustments.
 
-|                                   |
-|---------------------------------- |
-| Exposure                          |
-| Contrast                          |
-| Sharpness                         |
-| White Balance                     |
-| Saturation                        |
-| Color Noise Reductio              |
-| Noise Reduction                   |
-| Vignette Amount                   |
-| Vibrance                          |
-| Highlights                        |
-| Shadows                           |
-| Whites                            |
-| Blacks                            |
-| Clarity                           |
-| Dehaze                            |
-| Sharpen Radius                    |
-| Sharpen Detail                    |
-| Sharpen Edge Masking              |
-| Texture                           |
+The specific values to adjust include:
 
-## How it works
+- Exposure
+- Contrast
+- Sharpness
+- White Balance
+- Saturation
+- Color Noise Reduction
+- Noise Reduction
+- Vignette Amount
+- Vibrance
+- Highlights
+- Shadows
+- Whites
+- Blacks
+- Clarity
+- Dehaze
+- Sharpen Radius
+- Sharpen Detail
+- Sharpen Edge Masking
+- Texture
 
-The Apply Edits endpoint allows you to programmatically control the same adjustments you would make manually in the Lightroom Edit Panel. This gives you fine-grained control over:
+## Example implementation
 
-- **Exposure controls**: Adjust overall brightness and tonal values
-- **Color adjustments**: Modify saturation, vibrance, and white balance
-- **Detail enhancement**: Control sharpness, texture, and clarity
-- **Noise reduction**: Manage both luminance and color noise
-- **Creative effects**: Apply vignetting and dehaze adjustments
+Here is a detailed implementation example.
 
-## Code samples
+<Accordion>
+<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
 
-You can find code samples and implementation details in the [Code Sample guide](../code-sample/index.md#apply-edits-to-an-image).
+```shell
+curl -X POST \
+  https://image.adobe.io/lrService/edit \
+  -H "Authorization: Bearer ${TOKEN}"  \
+  -H "x-api-key: ${API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inputs": {
+        "source": {
+            "href": "<SIGNED_GET_URL>",
+            "storage": "<STORAGE_LOCATION>"
+        }
+    },
+    "options": {
+        "Exposure": -5.00 to 5.00,
+        "Contrast": -100 to 100,
+        "Sharpness": 0 10 150,
+        "WhiteBalance": <"As Shot", "Auto", "Cloudy", "Custom", "Daylight", "Flash", "Fluorescent", "Shade", "Tungsten">
+        "Saturation": -100 to 100,
+        "ColorNoiseReduction": 0 to 100,
+        "NoiseReduction": 0 to 100,
+        "VignetteAmount": -100 to 100,
+        "Vibrance": -100 to 100,
+        "Highlights": -100 to 100,
+        "Shadows": -100 to 100,
+        "Whites": -100 to 100,
+        "Blacks": -100 to 100,
+        "Clarity": -100 to 100,
+        "Dehaze": -100 to +100,
+        "SharpenRadius": 0.5 to 3.0,
+        "SharpenDetail": 0 to 100,
+        "SharpenEdgeMasking": 0 to 100,
+        "Texture": -100 t0 100
+    },
+    "outputs": [
+        {
+            "href": "<SIGNED_POST_URL>",
+            "type": "<TYPE>",
+            "storage": "<STORAGE_LOCATION>"
+        }
+    ]
+}'
+```
 
+</AccordionItem>
+<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
+
+```json
+{
+    "_links": {
+        "self": {
+            "href": "https://image.adobe.io/lrService/status/<JOB_ID>"
+        }
+    }
+}
+```
+
+</AccordionItem>
+</Accordion>
