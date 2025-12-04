@@ -95,6 +95,10 @@ module.exports = {
           {
             title: 'Webhook Integration',
             path: '/guides/use-webhooks'
+          },
+          {
+            title: 'Get task status and results',
+            path: '/guides/get-status'
           }
         ]
       }

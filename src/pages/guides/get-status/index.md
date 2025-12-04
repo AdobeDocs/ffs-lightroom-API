@@ -17,7 +17,7 @@ contributors:
   - 'https://github.com/archyposada'
 hideBreadcrumbNav: true
 ---
-# Get status and results
+# Get task status and results
 
 Use the Job ID with the `href` link that's returned in the response to poll for the status of a Lightroom API job.
 
