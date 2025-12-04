@@ -1,5 +1,5 @@
 ---
-title: How to apply XMP presets
+title: How to Apply XMP Presets Inline
 description: Learn how to apply Lightroom presets inline using XMP contents with Adobe Lightroom API.
 keywords:
   - Adobe Lightroom API
@@ -22,11 +22,7 @@ twitter:
   description: Learn how to apply Lightroom presets inline using XMP contents with Adobe Lightroom API.
 ---
 
-# Apply XMP
-
-Apply a Lightroom preset to an image, by passing in the preset XMP contents inline through the API. Code sample [here](../code-sample/index.md#apply-xmp-to-an-image)
-
-## What is Apply XMP?
+# Apply XMP inline
 
 The Apply XMP endpoint allows you to apply Lightroom adjustments by passing the XMP preset contents directly in your API request, rather than referencing a stored preset file. This is useful when you want to:
 
@@ -64,7 +60,7 @@ Here is a detailed implementation example.
 ```shell
 curl -X POST \
   https://image.adobe.io/lrService/xmp \
-  -H "Authorization: Bearer ${Token}"  \
+  -H "Authorization: Bearer ${TOKEN}"  \
   -H "x-api-key: ${API_KEY}" \
   -H "Content-Type: application/json" \
   -d '{
