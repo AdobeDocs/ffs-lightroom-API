@@ -24,6 +24,8 @@ twitter:
 
 # Apply new lightroom edits
 
+Adjust values in the Lightroom Edit Panel programmatically.
+
 The Apply Edits endpoint allows you to programmatically control the same adjustments you would make manually in the Lightroom Edit Panel. This gives you fine-grained control over values like:
 
 - **Exposure controls**: Adjust overall brightness and tonal values.

@@ -24,7 +24,9 @@ twitter:
 
 # Use Auto Straighten
 
-The Auto Straighten endpoint (/autoStraighten) applies the Auto Upright transformation to an image. This automatically analyzes your image to easily correct those photos that have a distorted vertical or horizontal perspective, making them straight and aligned.
+The Auto Straighten endpoint (/autoStraighten) applies the Auto Upright transformation to an image. 
+
+This feature automatically analyzes your image to easily correct those photos that have a distorted vertical or horizontal perspective, making them straight and aligned.
 
 ## Example implementation
 
