@@ -36,25 +36,27 @@ The Apply Edits endpoint allows you to programmatically control the same adjustm
 
 The specific values to adjust include:
 
-- Exposure
-- Contrast
-- Sharpness
-- White Balance
-- Saturation
-- Color Noise Reduction
-- Noise Reduction
-- Vignette Amount
-- Vibrance
-- Highlights
-- Shadows
-- Whites
-- Blacks
-- Clarity
-- Dehaze
-- Sharpen Radius
-- Sharpen Detail
-- Sharpen Edge Masking
-- Texture
+| Parameter | Value Range |
+|-----------|-------------|
+| Exposure | -5.00 to 5.00 |
+| Contrast | -100 to 100 |
+| Sharpness | 0 to 150 |
+| White Balance | "As Shot", "Auto", "Cloudy", "Custom", "Daylight", "Flash", "Fluorescent", "Shade", "Tungsten" |
+| Saturation | -100 to 100 |
+| Color Noise Reduction | 0 to 100 |
+| Noise Reduction | 0 to 100 |
+| Vignette Amount | -100 to 100 |
+| Vibrance | -100 to 100 |
+| Highlights | -100 to 100 |
+| Shadows | -100 to 100 |
+| Whites | -100 to 100 |
+| Blacks | -100 to 100 |
+| Clarity | -100 to 100 |
+| Dehaze | -100 to 100 |
+| Sharpen Radius | 0.5 to 3.0 |
+| Sharpen Detail | 0 to 100 |
+| Sharpen Edge Masking | 0 to 100 |
+| Texture | -100 to 100 |
 
 ## Example implementation
 
@@ -77,25 +79,25 @@ curl -X POST \
         }
     },
     "options": {
-        "Exposure": -5.00 to 5.00,
-        "Contrast": -100 to 100,
-        "Sharpness": 0 10 150,
-        "WhiteBalance": <"As Shot", "Auto", "Cloudy", "Custom", "Daylight", "Flash", "Fluorescent", "Shade", "Tungsten">
-        "Saturation": -100 to 100,
-        "ColorNoiseReduction": 0 to 100,
-        "NoiseReduction": 0 to 100,
-        "VignetteAmount": -100 to 100,
-        "Vibrance": -100 to 100,
-        "Highlights": -100 to 100,
-        "Shadows": -100 to 100,
-        "Whites": -100 to 100,
-        "Blacks": -100 to 100,
-        "Clarity": -100 to 100,
-        "Dehaze": -100 to +100,
-        "SharpenRadius": 0.5 to 3.0,
-        "SharpenDetail": 0 to 100,
-        "SharpenEdgeMasking": 0 to 100,
-        "Texture": -100 t0 100
+        "Exposure": "<-5.00 to 5.00>",
+        "Contrast": "<-100 to 100>",
+        "Sharpness": "<0 to 150>",
+        "WhiteBalance": "<"As Shot", "Auto", "Cloudy", "Custom", "Daylight", "Flash", "Fluorescent", "Shade", "Tungsten">",
+        "Saturation": "<-100 to 100>",
+        "ColorNoiseReduction": "<0 to 100>",
+        "NoiseReduction": "<0 to 100>",
+        "VignetteAmount": "<-100 to 100>",
+        "Vibrance": "<-100 to 100>",
+        "Highlights": "<-100 to 100>",
+        "Shadows": "<-100 to 100>",
+        "Whites": "<-100 to 100>",
+        "Blacks": "<-100 to 100>",
+        "Clarity": "<-100 to 100>",
+        "Dehaze": "<-100 to +100>",
+        "SharpenRadius": "<0.5 to 3.0>",
+        "SharpenDetail": "<0 to 100>",
+        "SharpenEdgeMasking": "<0 to 100>",
+        "Texture": "<-100 to 100>"
     },
     "outputs": [
         {
