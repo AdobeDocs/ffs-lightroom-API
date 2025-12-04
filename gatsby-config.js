@@ -85,7 +85,7 @@ module.exports = {
             path: '/guides/apply-xmp'
           },
           {
-            title: 'Webhook Integration',
+            title: 'Webhook integration',
             path: '/guides/use-webhooks'
           },
           {
