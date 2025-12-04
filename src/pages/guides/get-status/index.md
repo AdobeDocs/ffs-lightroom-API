@@ -19,9 +19,9 @@ hideBreadcrumbNav: true
 ---
 # Get task status and results
 
-Use the Job ID with the `href` link that's returned in the response to poll for the status of a Lightroom API job.
+Get the status and results of a Lightroom API job.
 
-When a successful job completes, the output file is available at the `href` link in the response.
+Use the Job ID with the `href` link that's returned in the response to poll for the status of a Lightroom API job. When a successful job completes, the output file is available at the `href` link in the response.
 
 If the job fails due to an error, the `errorDetails` field in the response will contain the details of the failure.
 
