@@ -34,9 +34,9 @@ The Apply XMP endpoint allows you to apply Lightroom adjustments by passing the 
 - Dynamically generate preset values on the fly
 - Integrate preset generation into your application workflow
 
-## How it differs from Apply Presets
+### How it differs from applying presets
 
-While [Apply Presets](../apply-presets/index.md) requires you to store XMP files in cloud storage and reference them by URL, Apply XMP allows you to pass the XMP content directly inline in your API request.
+While the [Apply Presets](../apply-presets/index.md) process requires you to store XMP files in cloud storage and reference them by URL, Apply XMP allows you to pass the XMP content directly inline in your API request.
 
 **Apply Presets**: Reference a stored `.xmp` file
 
@@ -50,11 +50,56 @@ While [Apply Presets](../apply-presets/index.md) requires you to store XMP files
 
 ```json
 {
-  "xmp": "<xmp content here>"
+  "xmp": "<xmp_content>"
 }
 ```
 
-## Code samples
+## Code implementation
 
-You can find code samples and implementation details in the [Code Sample guide](../code-sample/index.md#apply-xmp-to-an-image).
+Here is a detailed implementation example.
 
+<Accordion>
+<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
+
+```shell
+curl -X POST \
+  https://image.adobe.io/lrService/xmp \
+  -H "Authorization: Bearer ${Token}"  \
+  -H "x-api-key: ${API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inputs": {
+        "source": {
+            "href": "<SIGNED_GET_URL>",
+            "storage": "<STORAGE_LOCATION>"
+        }
+    },
+    "options": {
+        "xmp": "<XMP_CONTENT>",
+        "orientation": "<ORIENTATION>"
+    },
+    "outputs": [
+        {
+            "href": "<SIGNED_POST_URL>",
+            "storage": "<STORAGE_LOCATION>",
+            "type": "<TYPE>"
+        }
+    ]
+}'
+```
+
+</AccordionItem>
+<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
+
+```json
+{
+    "_links": {
+        "self": {
+            "href": "https://image.adobe.io/lrService/status/<JOB_ID>"
+        }
+    }
+}
+```
+
+</AccordionItem>
+</Accordion>
