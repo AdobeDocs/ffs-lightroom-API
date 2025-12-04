@@ -25,6 +25,8 @@ twitter:
 
 # Using webhooks through Adobe I/O Events
 
+Use webhooks with Adobe Lightroom API through Adobe I/O Events.
+
 Adobe I/O Events offers the possibility to build an event-driven application, based on events originating from Lightroom and Lightroom APIs. To start listening for events, your application needs to register a webhook URL, specifying the Event Types to receive. Whenever a matching event gets triggered, your application is notified through an HTTP POST request to the webhook URL.
 
 The Event Provider for Lightroom and Lightroom APIs is `Imaging API Events`. This event provider has two event types:

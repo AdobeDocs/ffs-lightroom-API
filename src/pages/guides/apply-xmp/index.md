@@ -24,6 +24,8 @@ twitter:
 
 # Apply XMP inline
 
+Apply Lightroom presets inline using XMP. 
+
 The Apply XMP endpoint allows you to apply Lightroom adjustments by passing the XMP preset contents directly in your API request, rather than referencing a stored preset file. This is useful when you want to:
 
 - Apply adjustments without storing preset files in cloud storage
