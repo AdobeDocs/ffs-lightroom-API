@@ -44,7 +44,46 @@ Auto Tone analyzes the content of your image and automatically adjusts the follo
 
 The adjustments are made using an AI/ML model that has been trained to enhance images based on their specific content and characteristics.
 
-## Example usage
+## Example implementation
 
-You can find code samples and implementation details in the [Code Sample guide](../code-sample/index.md).
+Here is a detailed implementation example.
 
+<Accordion>
+<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
+
+```shell
+curl -X POST \
+  https://image.adobe.io/lrService/autoTone \
+  -H "Authorization: Bearer ${TOKEN}"  \
+  -H "x-api-key: ${API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inputs": {
+        "href": "<SIGNED_GET_URL>",
+        "storage": "<STORAGE_LOCATION>"
+    },
+    "outputs": [
+        {
+            "href": "<SIGNED_POST_URL>",
+            "type": "<TYPE>",
+            "storage": "<STORAGE_LOCATION>"
+        }
+    ]
+}'
+```
+
+</AccordionItem>
+<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
+
+```json
+{
+    "_links": {
+        "self": {
+            "href": "https://image.adobe.io/lrService/status/<JOB_ID>"
+        }
+    }
+}
+```
+
+</AccordionItem>
+</Accordion>
