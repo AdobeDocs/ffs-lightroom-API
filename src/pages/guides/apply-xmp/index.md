@@ -1,5 +1,5 @@
 ---
-title: Apply XMP
+title: How to apply XMP presets
 description: Learn how to apply Lightroom presets inline using XMP contents with Adobe Lightroom API.
 keywords:
   - Adobe Lightroom API
@@ -39,14 +39,16 @@ The Apply XMP endpoint allows you to apply Lightroom adjustments by passing the 
 While [Apply Presets](../apply-presets/index.md) requires you to store XMP files in cloud storage and reference them by URL, Apply XMP allows you to pass the XMP content directly inline in your API request.
 
 **Apply Presets**: Reference a stored `.xmp` file
-```
+
+```json
 {
   "preset": "https://example.com/path/to/preset.xmp"
 }
 ```
 
 **Apply XMP**: Pass XMP content inline
-```
+
+```json
 {
   "xmp": "<xmp content here>"
 }

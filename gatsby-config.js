@@ -81,12 +81,16 @@ module.exports = {
             path: '/guides/auto-straighten'
           },
           {
-            title: 'How to apply XMP presets',
+            title: 'How to apply presets',
             path: '/guides/apply-presets'
           },
           {
             title: 'Apply new Lightroom edits',
             path: '/guides/apply-edits'
+          },
+          {
+            title: 'How to apply XMP inline',
+            path: '/guides/apply-xmp'
           },
           {
             title: 'Webhook Integration',
