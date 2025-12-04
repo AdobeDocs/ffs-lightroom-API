@@ -1,5 +1,5 @@
 ---
-title: Apply Presets
+title: Apply Lightroom API Presets
 description: Learn how to apply Lightroom presets to images using Adobe Lightroom API.
 keywords:
   - Adobe Lightroom API
@@ -23,20 +23,18 @@ twitter:
   description: Learn how to apply Lightroom presets to images using Adobe Lightroom API.
 ---
 
-# Apply Presets
+# How to apply presets
 
-Apply one or more XMP Lightroom Presets to an image, by referencing Preset file(s) stored on the cloud. You can find a code sample [here.](../code-sample/index.md#apply-presets-to-an-image)
+Apply one or more XMP Lightroom presets to an image, by referencing preset file(s) stored on the cloud.
 
-A Preset file can be created by editing an image in Lightroom and exporting it as a `.xmp` file. You can learn more about creating presets [here](https://creativecloud.adobe.com/en-LU/learn/lightroom-cc/web/create-your-own-presets)
+A preset file can be created by editing an image in Lightroom and exporting it as a `.xmp` file. [Learn more about creating presets.](https://creativecloud.adobe.com/en-LU/learn/lightroom-cc/web/create-your-own-presets)
 
 ## How to create an XMP file
 
-If you need to create an `.xmp` file from a set of slider values obtained directly from a user, you can start with the empty `.xmp` file [here](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample-code/lr-sample-app/crs.xml) and add the corresponding slider values.
+To create an `.xmp` file from a set of slider values set directly by a user, [start with the empty `.xmp` file template here](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample-code/lr-sample-app/crs.xml) and add the corresponding slider values.
 
-You can find a code sample [here](../code-sample/index.md#apply-edits-to-an-image).
-
-In this example, we are applying the Preset called "Aged Photo" to automatically make the adjustments.
-![alt image](../features/preset_example.png?raw=true "Original Image")
+In this example, the preset called "Aged Photo" is applied to automatically make the adjustments to achieve the desired effect.
+![A small waterfall in a forest with a waterfall in the foreground and a tree in the background, before and after](../features/preset_example.png?raw=true "Apply Presets Example")
 
 ## What are Presets?
 
@@ -47,8 +45,58 @@ Presets are pre-configured sets of adjustments that can be applied to images. Th
 - Share editing styles with others
 - Create signature looks for your photography
 
-## Code samples
+## Example implementation
 
-- [Apply Presets to an Image](../code-sample/index.md#apply-presets-to-an-image)
-- [Apply Edits to an Image](../code-sample/index.md#apply-edits-to-an-image)
+Here is a detailed implementation example.
 
+<Accordion>
+<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
+
+```shell
+curl -X POST \
+  https://image.adobe.io/lrService/presets \
+  -H "Authorization: Bearer ${TOKEN}"  \
+  -H "x-api-key: ${API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inputs": {
+        "source": {
+            "href": "<SIGNED_GET_URL>",
+            "storage": "<STORAGE_LOCATION>"
+        },
+        "presets": [
+            {
+                "href": "<SIGNED_GET_URL>",
+                "storage": "<STORAGE_LOCATION>"
+            },
+            {
+                "href": "<SIGNED_GET_URL>",
+                "storage": "<STORAGE_LOCATION>"
+            }
+        ]
+    },
+    "outputs": [
+        {
+            "href": "<SIGNED_POST_URL>",
+            "type": "<TYPE>",
+            "storage": "<STORAGE_LOCATION>"
+        }
+    ]
+}'
+```
+
+</AccordionItem>
+<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
+
+```json
+{
+    "_links": {
+        "self": {
+            "href": "https://image.adobe.io/lrService/status/<JOB_ID>"
+        }
+    }
+}
+```
+
+</AccordionItem>
+</Accordion>
