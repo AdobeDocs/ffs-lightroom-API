@@ -27,11 +27,7 @@ twitter:
 
 Adobe I/O Events offers the possibility to build an event-driven application, based on events originating from Lightroom and Lightroom APIs. To start listening for events, your application needs to register a webhook URL, specifying the Event Types to receive. Whenever a matching event gets triggered, your application is notified through an HTTP POST request to the webhook URL.
 
-The Event Provider for Lightroom and Lightroom APIs is `Imaging API Events`.
-
-## Event types
-
-This event provider has two event types:
+The Event Provider for Lightroom and Lightroom APIs is `Imaging API Events`. This event provider has two event types:
 
 1. `Lightroom API events`
 2. `Lightroom API events`
