@@ -27,7 +27,7 @@ If the job fails due to an error, the `errorDetails` field in the response will 
 
 ```shell
 curl -X GET \
-  https://image.adobe.io/lrService/status/<jobId> \
+  https://image.adobe.io/lrService/status/<JOB_ID> \
   -H "Authorization: Bearer ${TOKEN}"  \
   -H "x-api-key: ${API_KEY}" \
   -H "Content-Type: application/json" \
