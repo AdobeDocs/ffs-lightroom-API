@@ -1,5 +1,5 @@
 ---
-title: Auto Tone
+title: Use Lightroom API Auto Tone
 description: Learn how to use the Auto Tone feature in Adobe Lightroom API.
 keywords:
   - Adobe Lightroom API
