@@ -22,7 +22,7 @@ twitter:
   description: Learn how to use the Auto Tone feature in Adobe Lightroom API.
 ---
 
-# Auto Tone
+# Use Auto Tone
 
 The Auto Tone feature in Lightroom Classic utilizes an AI/ML model trained to adjust slider values automatically, enhancing images based on their content. It identifies elements within the image and adjusts Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Saturation, and Vibrance accordingly, resulting in striking photos.
 
