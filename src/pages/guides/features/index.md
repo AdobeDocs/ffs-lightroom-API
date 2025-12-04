@@ -37,7 +37,7 @@ These features are currently supported with the Adobe Lightroom API.
 The Auto Tone feature in Lightroom Classic utilizes an AI/ML model trained to adjust slider values automatically, enhancing images based on their content. It identifies elements within the image and adjusts Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Saturation, and Vibrance accordingly, resulting in striking photos.
 
 In this example, we automatically adjusted the photo using the AutoTone API.
-![An image of an island in the sea with Auto Tone applied, before and after](./autotone_example.png "Auto Tone Example")
+![An image of an island in the sea with Auto Tone applied, before and after](../images/autotone_example.png "Auto Tone Example")
 
 ## Auto Straighten
 
@@ -56,7 +56,7 @@ If you need to create an `.xmp` file from a set of slider values obtained direct
 You can find a code sample [here](../code-sample/index.md#apply-edits-to-an-image).
 
 In this example, we are applying the Preset called "Aged Photo" to automatically make the adjustments.
-![alt image](./preset_example.png?raw=true "Original Image")
+![alt image](../images/preset_example.png?raw=true "Original Image")
 
 ## Apply Edits
 
