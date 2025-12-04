@@ -71,6 +71,26 @@ module.exports = {
           {
             title: 'Features',
             path: '/guides/features'
+          },
+          {
+            title: 'Use Auto Tone',
+            path: '/guides/auto-tone'
+          },
+          {
+            title: 'Use Auto Straighten',
+            path: '/guides/auto-straighten'
+          },
+          {
+            title: 'How to apply XMP presets',
+            path: '/guides/apply-presets'
+          },
+          {
+            title: 'Apply new Lightroom edits',
+            path: '/guides/apply-edits'
+          },
+          {
+            title: 'Webhook Integration',
+            path: '/guides/use-webhooks'
           }
         ]
       }
