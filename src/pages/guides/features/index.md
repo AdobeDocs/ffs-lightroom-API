@@ -28,7 +28,7 @@ twitter:
   description: Learn about the available features in Lightroom API.
 ---
 
-# Supported Features
+# Supported features
 
 These features are currently supported with the Adobe Lightroom API.
 
@@ -37,7 +37,7 @@ These features are currently supported with the Adobe Lightroom API.
 The Auto Tone feature in Lightroom Classic utilizes an AI/ML model trained to adjust slider values automatically, enhancing images based on their content. It identifies elements within the image and adjusts Exposure, Contrast, Highlights, Shadows, Whites, Blacks, Saturation, and Vibrance accordingly, resulting in striking photos.
 
 In this example, we automatically adjusted the photo using the AutoTone API.
-![alt image](./autotone_example.png?raw=true "Original Image")
+![An image of an island in the sea with Auto Tone applied, before and after](./autotone_example.png "Auto Tone Example")
 
 ## Auto Straighten
 
