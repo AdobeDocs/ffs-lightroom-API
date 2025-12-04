@@ -1,5 +1,5 @@
 ---
-title: Auto Straighten
+title: Use Lightroom API Auto Straighten
 description: Learn how to use the Auto Straighten feature in Adobe Lightroom API.
 keywords:
   - Adobe Lightroom API
@@ -22,19 +22,50 @@ twitter:
   description: Learn how to use the Auto Straighten feature in Adobe Lightroom API.
 ---
 
-# Auto Straighten
+# Use Auto Straighten
 
-This endpoint applies the Auto Upright transformation on an image.
+The Auto Straighten endpoint (/autoStraighten) applies the Auto Upright transformation to an image. This automatically analyzes your image to easily correct those photos that have a distorted vertical or horizontal perspective, making them straight and aligned.
 
-## What is Auto Upright?
+## Example implementation
 
-Auto Upright automatically analyzes your image and applies perspective corrections to straighten horizons and align vertical and horizontal lines. This is particularly useful for:
+Here is a detailed implementation example.
 
-- Architectural photography
-- Landscape photos with crooked horizons
-- Images that need perspective correction
+<Accordion>
+<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
 
-## Example usage
+```shell
+curl -X POST \
+  https://image.adobe.io/lrService/autoStraighten \
+  -H "Authorization: Bearer ${TOKEN}"  \
+  -H "x-api-key: ${API_KEY}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "inputs": {
+        "href": "<SIGNED_GET_URL>",
+        "storage": "<STORAGE_LOCATION>"
+    },
+    "outputs": [
+        {
+            "href": "<SIGNED_POST_URL>",
+            "type": "<TYPE>",
+            "storage": "<STORAGE_LOCATION>"
+        }
+    ]
+}'
+```
 
-You can find code samples and implementation details in the [Code Sample guide](../code-sample/index.md).
+</AccordionItem>
+<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
 
+```json
+{
+    "_links": {
+        "self": {
+            "href": "https://image.adobe.io/lrService/status/<JOB_ID>"
+        }
+    }
+}
+```
+
+</AccordionItem>
+</Accordion>
