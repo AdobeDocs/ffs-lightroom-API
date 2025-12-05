@@ -24,7 +24,7 @@ twitter:
 
 # Use Auto Tone
 
-The Auto Tone feature in Lightroom Classic utilizes an AI/ML model trained to adjust slider values automatically, enhancing images based on their content. 
+The Auto Tone feature in Lightroom Classic utilizes an AI/ML model trained to adjust slider values automatically, enhancing images based on their content.
 
 This feature identifies elements within the image and adjusts those characteristics (like exposure, contrast, highlights, saturation, and more) to achieve striking photo results.
 
