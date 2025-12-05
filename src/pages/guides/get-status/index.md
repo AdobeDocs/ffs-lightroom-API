@@ -1,5 +1,5 @@
 ---
-title: Get Lightroom API Status and Results
+title: Get Lightroom API Job Status and Results
 description: Learn how to get the status and results of a Lightroom API job.
 keywords:
   - Adobe Lightroom API
