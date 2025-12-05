@@ -1,8 +1,9 @@
 ---
-title: Quickstart
-description: Quickstart guide for Lightroom API
+title: Lightroom API Quickstart
+description: Quickstart tutorial guide for Firefly's Lightroom API.
 contributors:
   - 'https://github.com/bishoysefin'
+  - 'https://github.com/aeabreu-hub'
 keywords:
   - Adobe Lightroom API
   - photo editing API
@@ -25,7 +26,7 @@ twitter:
   description: Quickstart guide for Lightroom API
 ---
 
-# Quickstart Guide
+# Quickstart guide
 
 Modify your first Image with Lightroom APIs
 
@@ -536,4 +537,4 @@ async function checkJobStatus(jobId, accessToken) {
 
 ## Deepen Your Understanding
 
-Explore more Lightroom API options in our [Lightroom Tutorials](../../guides/code-sample/) 🚀
+Explore more Lightroom API options in our [Lightroom How-to guides](../../guides/) 🚀
