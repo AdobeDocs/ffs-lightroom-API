@@ -1035,19 +1035,19 @@
             },
             "ApplyPresetXmpOptions": {
                 "title": "ApplyPresetXmpOptions",
-                "description": "Options for applying a preset xmp to an image",
+                "description": "Options for applying a preset XMP to an image.",
                 "type": "object",
                 "required": ["xmp"],
                 "properties": {
                     "xmp": {
                         "type": "string",
-                        "description": "The XMP to apply"
+                        "description": "The XMP to apply."
                     },
                     "orientation": {
                         "maximum": 8.0,
                         "minimum": 1.0,
                         "type": "number",
-                        "description": "The combination of flip and/or rotate to apply"
+                        "description": "The combination of flip and/or rotate to apply."
                     }
                 }
             },
@@ -1057,7 +1057,7 @@
                 "properties": {
                     "input": {
                         "type": "string",
-                        "description": "the original input file path"
+                        "description": "The original input file path."
                     },
                     "status": {
                         "$ref": "#/components/schemas/JobStatus"
@@ -1074,11 +1074,11 @@
             "SelfLink": {
                 "title": "SelfLink",
                 "type": "object",
-                "description": "Self link for the job status",
+                "description": "Self link for the job status.",
                 "properties": {
                     "href": {
                         "type": "string",
-                        "description": "Job Status Url"
+                        "description": "Job Status URL."
                     }
                 }
             },
@@ -1086,13 +1086,13 @@
                 "title": "JobStatus",
                 "enum": ["pending", "running", "succeeded", "failed"],
                 "type": "string",
-                "description": "Status of the job"
+                "description": "Status of the job."
             },
             "StorageType": {
                 "title": "StorageType",
                 "enum": ["external", "azure", "dropbox"],
                 "type": "string",
-                "description": "Storage location"
+                "description": "Storage location."
             },
             "UprightMode": {
                 "title": "UprightMode",
@@ -1102,7 +1102,7 @@
             },
             "WhiteBalance": {
                 "title": "WhiteBalance",
-                "description": "White balance settings",
+                "description": "White balance settings.",
                 "enum": [
                     "As Shot",
                     "Auto",
