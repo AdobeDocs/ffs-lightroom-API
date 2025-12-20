@@ -17,41 +17,15 @@
             "variables": {}
         }
     ],
-    "paths": {
-        "/lrService/status/{jobId}": {
-            "get": {
-                "summary": "Get Status API",
-                "description": "Get job status of a Lightroom job",
-                "operationId": "lrJobStatus",
-                "x-ffs-status-fetcher": "true",
-                "x-ffs-job-name": "LrAsyncJob",
-                "parameters": [
-                    {
-                        "name": "jobId",
-                        "in": "path",
-                        "description": "The job to get status for",
-                        "required": true,
-                        "schema": {
-                            "type": "string"
-                        }
-                    }
-                ],
-                "responses": {
-                    "202": {
-                        "description": "Job status",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/LrJobApiResponse"
-                                }
-                            }
-                        }
-                    }
-                },
-                "deprecated": false
-            }
+    "security": [
+        {
+            "ApiKeyAuth": []
         },
+        {
+            "BearerAuth": []
+        }
+    ],
+    "paths": {
         "/lrService/autoStraighten": {
             "post": {
                 "summary": "Auto Straighten API",
@@ -544,6 +518,40 @@
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/JobError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "/lrService/status/{jobId}": {
+            "get": {
+                "summary": "Get Status API",
+                "description": "Get job status of a Lightroom job",
+                "operationId": "lrJobStatus",
+                "x-ffs-status-fetcher": "true",
+                "x-ffs-job-name": "LrAsyncJob",
+                "parameters": [
+                    {
+                        "name": "jobId",
+                        "in": "path",
+                        "description": "The job to get status for",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "202": {
+                        "description": "Job status",
+                        "headers": {},
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/LrJobApiResponse"
                                 }
                             }
                         }
@@ -1120,13 +1128,5 @@
                 "in": "header"
             }
         }
-    },
-    "security": [
-        {
-            "ApiKeyAuth": []
-        },
-        {
-            "BearerAuth": []
-        }
-    ]
+    }
 }
