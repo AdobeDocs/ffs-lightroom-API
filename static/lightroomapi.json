@@ -2,7 +2,7 @@
     "openapi": "3.0.3",
     "info": {
         "title": "Adobe Lightroom API",
-        "description": "Your interface to Adobe Lightroom and Imaging APIs",
+        "description": "This is the API reference documentation for Firefly's Lightroom API.",
         "contact": {
             "name": "Adobe Lightroom API Support",
             "url": "https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Lightroom",
@@ -28,7 +28,7 @@
     "paths": {
         "/lrService/autoStraighten": {
             "post": {
-                "summary": "Auto Straighten API",
+                "summary": "Auto-straighten",
                 "description": "Auto Straighten an image. Applies the Auto Upright transformation on an image ",
                 "operationId": "autoStraightenImage",
                 "x-ffs-async-job": "true",
@@ -128,7 +128,7 @@
         },
         "/lrService/autoTone": {
             "post": {
-                "summary": "Auto Tone API",
+                "summary": "Auto-tone",
                 "description": "Automatically correct exposure, contrast, sharpness, saturation on an image ",
                 "operationId": "applyAutoTone",
                 "x-ffs-async-job": "true",
@@ -228,7 +228,7 @@
         },
         "/lrService/edit": {
             "post": {
-                "summary": "Apply Lightroom Edits API",
+                "summary": "Apply Lightroom edits",
                 "description": "Apply one or more Lightroom edits ( exposure, contrast, sharpness, saturation ) to an image. ",
                 "operationId": "applyEdits",
                 "x-ffs-async-job": "true",
@@ -328,7 +328,7 @@
         },
         "/lrService/presets": {
             "post": {
-                "summary": "Apply Lightroom Presets API",
+                "summary": "Apply Lightroom presets",
                 "description": "Apply one or more XMP Lightroom presets to the given image, by using the given preset XMP file(s).",
                 "operationId": "applyPreset",
                 "x-ffs-async-job": "true",
@@ -428,7 +428,7 @@
         },
         "/lrService/xmp": {
             "post": {
-                "summary": "Add XMP to Image API",
+                "summary": "Add XMP to image",
                 "description": "Apply XMP based Lightroom preset to an image. XMP content is passed inline to the api.",
                 "operationId": "applyPresetFromXmpContent",
                 "x-ffs-async-job": "true",
@@ -528,7 +528,7 @@
         },
         "/lrService/status/{jobId}": {
             "get": {
-                "summary": "Get Status API",
+                "summary": "Get status",
                 "description": "Get job status of a Lightroom job",
                 "operationId": "lrJobStatus",
                 "x-ffs-status-fetcher": "true",
