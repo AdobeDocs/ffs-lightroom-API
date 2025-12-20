@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.3",
     "info": {
-        "title": "Adobe Lightroom and Imaging APIs",
+        "title": "Adobe Lightroom API",
         "description": "Your interface to Adobe Lightroom and Imaging APIs",
         "contact": {
             "name": "Adobe Lightroom API Support",
@@ -17,16 +17,9 @@
             "variables": {}
         }
     ],
-    "tags": [
-        {
-            "name": "Lightroom",
-            "description": "Adobe Lightroom and Imaging APIs"
-        }
-    ],
     "paths": {
         "/lrService/status/{jobId}": {
             "get": {
-                "tags": ["Lightroom"],
                 "summary": "Get Status API",
                 "description": "Get job status of a Lightroom job",
                 "operationId": "lrJobStatus",
@@ -61,7 +54,6 @@
         },
         "/lrService/autoStraighten": {
             "post": {
-                "tags": ["Lightroom"],
                 "summary": "Auto Straighten API",
                 "description": "Auto Straighten an image. Applies the Auto Upright transformation on an image ",
                 "operationId": "autoStraightenImage",
@@ -162,7 +154,6 @@
         },
         "/lrService/autoTone": {
             "post": {
-                "tags": ["Lightroom"],
                 "summary": "Auto Tone API",
                 "description": "Automatically correct exposure, contrast, sharpness, saturation on an image ",
                 "operationId": "applyAutoTone",
@@ -263,7 +254,6 @@
         },
         "/lrService/edit": {
             "post": {
-                "tags": ["Lightroom"],
                 "summary": "Apply Lightroom Edits API",
                 "description": "Apply one or more Lightroom edits ( exposure, contrast, sharpness, saturation ) to an image. ",
                 "operationId": "applyEdits",
@@ -364,7 +354,6 @@
         },
         "/lrService/presets": {
             "post": {
-                "tags": ["Lightroom"],
                 "summary": "Apply Lightroom Presets API",
                 "description": "Apply one or more XMP Lightroom presets to the given image, by using the given preset XMP file(s).",
                 "operationId": "applyPreset",
@@ -465,7 +454,6 @@
         },
         "/lrService/xmp": {
             "post": {
-                "tags": ["Lightroom"],
                 "summary": "Add XMP to Image API",
                 "description": "Apply XMP based Lightroom preset to an image. XMP content is passed inline to the api.",
                 "operationId": "applyPresetFromXmpContent",
