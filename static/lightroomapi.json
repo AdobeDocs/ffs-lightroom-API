@@ -29,12 +29,12 @@
         "/lrService/autoStraighten": {
             "post": {
                 "summary": "Auto-straighten",
-                "description": "Auto Straighten an image. Applies the Auto Upright transformation on an image ",
+                "description": "Auto-straighten an image by applying the Auto Upright transformation.",
                 "operationId": "autoStraightenImage",
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for auto straighten api",
+                    "description": "Request body for auto straighten.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -46,7 +46,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "response",
+                        "description": "Accepted",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -57,7 +57,7 @@
                         }
                     },
                     "400": {
-                        "description": "InputValidationError",
+                        "description": "Input Validation Error",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -90,7 +90,7 @@
                         }
                     },
                     "404": {
-                        "description": "Requested resource was not found",
+                        "description": "Requested Resource Was Not Found",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -101,7 +101,7 @@
                         }
                     },
                     "409": {
-                        "description": "Unable to upload asset",
+                        "description": "Unable To Upload Asset",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -129,12 +129,12 @@
         "/lrService/autoTone": {
             "post": {
                 "summary": "Auto-tone",
-                "description": "Automatically correct exposure, contrast, sharpness, saturation on an image ",
+                "description": "Automatically correct exposure, contrast, sharpness, and saturation on an image.",
                 "operationId": "applyAutoTone",
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for applyAutoTone api",
+                    "description": "Request body for auto tone.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -146,7 +146,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "response",
+                        "description": "Accepted",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -157,7 +157,7 @@
                         }
                     },
                     "400": {
-                        "description": "InputValidationError",
+                        "description": "Input Validation Error",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -190,7 +190,7 @@
                         }
                     },
                     "404": {
-                        "description": "Requested resource was not found",
+                        "description": "Requested Resource Was Not Found",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -201,7 +201,7 @@
                         }
                     },
                     "409": {
-                        "description": "Unable to upload asset",
+                        "description": "Unable To Upload Asset",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -229,12 +229,12 @@
         "/lrService/edit": {
             "post": {
                 "summary": "Apply Lightroom edits",
-                "description": "Apply one or more Lightroom edits ( exposure, contrast, sharpness, saturation ) to an image. ",
+                "description": "Apply one or more Lightroom edits (exposure, contrast, sharpness, saturation) to an image.",
                 "operationId": "applyEdits",
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for edit api",
+                    "description": "Request body for edit.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -246,7 +246,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "response",
+                        "description": "Accepted",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -257,7 +257,7 @@
                         }
                     },
                     "400": {
-                        "description": "InputValidationError",
+                        "description": "Input Validation Error",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -290,7 +290,7 @@
                         }
                     },
                     "404": {
-                        "description": "Requested resource was not found",
+                        "description": "Requested Resource Was Not Found",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -301,7 +301,7 @@
                         }
                     },
                     "409": {
-                        "description": "Unable to upload asset",
+                        "description": "Unable To Upload Asset",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -334,7 +334,7 @@
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for presets api",
+                    "description": "Request body for presets.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -346,7 +346,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "response",
+                        "description": "Accepted",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -357,7 +357,7 @@
                         }
                     },
                     "400": {
-                        "description": "InputValidationError",
+                        "description": "Input Validation Error",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -390,7 +390,7 @@
                         }
                     },
                     "404": {
-                        "description": "Requested resource was not found",
+                        "description": "Requested Resource Was Not Found",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -401,7 +401,7 @@
                         }
                     },
                     "409": {
-                        "description": "Unable to upload asset",
+                        "description": "Unable To Upload Asset",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -429,12 +429,12 @@
         "/lrService/xmp": {
             "post": {
                 "summary": "Add XMP to image",
-                "description": "Apply XMP based Lightroom preset to an image. XMP content is passed inline to the api.",
+                "description": "Apply XMP-based Lightroom preset to an image. XMP content is passed inline to the API.",
                 "operationId": "applyPresetFromXmpContent",
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for xmp api",
+                    "description": "Request body for XMP.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -446,7 +446,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "response",
+                        "description": "Accepted",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -457,7 +457,7 @@
                         }
                     },
                     "400": {
-                        "description": "InputValidationError",
+                        "description": "Input Validation Error",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -490,7 +490,7 @@
                         }
                     },
                     "404": {
-                        "description": "Requested resource was not found",
+                        "description": "Requested Resource Was Not Found",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -501,7 +501,7 @@
                         }
                     },
                     "409": {
-                        "description": "Unable to upload asset",
+                        "description": "Unable To Upload Asset",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -529,7 +529,7 @@
         "/lrService/status/{jobId}": {
             "get": {
                 "summary": "Get status",
-                "description": "Get job status of a Lightroom job",
+                "description": "Get job status of a Lightroom job.",
                 "operationId": "lrJobStatus",
                 "x-ffs-status-fetcher": "true",
                 "x-ffs-job-name": "LrAsyncJob",
@@ -546,7 +546,7 @@
                 ],
                 "responses": {
                     "202": {
-                        "description": "Job status",
+                        "description": "Job Status",
                         "headers": {},
                         "content": {
                             "application/json": {
