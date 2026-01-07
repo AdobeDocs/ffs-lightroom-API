@@ -1,6 +1,7 @@
 ---
 title: Firefly Lightroom API
 description: Firefly Lightroom API reference documentation.
+layout: none
 keywords:
   - Lightroom API
   - Lightroom API reference
