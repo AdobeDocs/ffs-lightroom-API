@@ -12,15 +12,15 @@
         - [Substance 3D API](https://developer.adobe.com/firefly-services/docs/s3dapi/?aio_internal) - Unlock generative AI for rendering and object composites.
         - [Content Tagging API](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/content-commerce-ai/overview.html) - Docs and references for Content Tagging services.
     - [About Lightroom API](/index.md)
-    - [Getting Started](/getting_started/index.md)
+    - [Getting Started](/getting-started/index.md)
     - [Guides](/guides/index.md)
     - [API Reference](/api/index.md)
 
 - subPages:
     - Getting Started header
-    - [Authentication](/getting_started/index.md)
-    - [Technical Usage Notes](/getting_started/usage/index.md)
-    - [Storage Solutions](/getting_started/storage_solutions/index.md)
+    - [Authentication](/getting-started/index.md)
+    - [Technical Usage Notes](/getting-started/usage/index.md)
+    - [Storage Solutions](/getting-started/storage-solutions/index.md)
     - Guides header
     - [Lightroom Quickstart](/guides/quickstart/index.md)
     - [Use Auto Tone](/guides/auto-tone/index.md)

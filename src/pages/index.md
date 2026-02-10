@@ -49,7 +49,7 @@ Welcome to the Adobe Lightroom API, now integrated into Firefly Services. Our AP
 
 ### Get Started
 
-[Getting Started Guide](getting_started/index.md)
+[Getting Started Guide](getting-started/index.md)
 
 Get started with the Adobe Firefly Services.
 
