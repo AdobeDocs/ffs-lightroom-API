@@ -1,0 +1,32 @@
+- pathPrefix:
+    - /firefly-services/docs/lightroom/
+
+- pages:
+    - All Firefly Services
+        - [Firefly Services Home](https://developer.adobe.com/firefly-services/docs/guides/?aio_internal) - Introduction and general information about all Firefly services.
+        - [Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/?aio_internal) - Docs and references for Firefly API.
+        - [Photoshop API](https://developer.adobe.com/firefly-services/docs/photoshop/?aio_internal) - Docs and references for Photoshop API.
+        - [Lightroom API](https://developer.adobe.com/firefly-services/docs/lightroom/?aio_internal) - Docs and references for Lightroom API.
+        - [Audio/Video API](https://developer.adobe.com/audio-video-firefly-services/?aio_internal) - Docs and references for Audio/Video API.
+        - [InDesign API](https://developer.adobe.com/firefly-services/docs/indesign-apis/?aio_internal) - Docs and references for InDesign API.
+        - [Substance 3D API](https://developer.adobe.com/firefly-services/docs/s3dapi/?aio_internal) - Unlock generative AI for rendering and object composites.
+        - [Content Tagging API](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/content-commerce-ai/overview.html) - Docs and references for Content Tagging services.
+    - [About Lightroom API](/index.md)
+    - [Getting Started](/getting_started/index.md)
+    - [Guides](/guides/index.md)
+    - [API Reference](/api/index.md)
+
+- subPages:
+    - Getting Started header
+    - [Authentication](/getting_started/index.md)
+    - [Technical Usage Notes](/getting_started/usage/index.md)
+    - [Storage Solutions](/getting_started/storage_solutions/index.md)
+    - Guides header
+    - [Lightroom Quickstart](/guides/quickstart/index.md)
+    - [Use Auto Tone](/guides/auto-tone/index.md)
+    - [Use Auto Straighten](/guides/auto-straighten/index.md)
+    - [How to apply presets](/guides/apply-presets/index.md)
+    - [Apply new Lightroom edits](/guides/apply-edits/index.md)
+    - [How to apply XMP inline](/guides/apply-xmp/index.md)
+    - [Webhook integration](/guides/use-webhooks/index.md)
+    - [Get task status and results](/guides/get-status/index.md)
