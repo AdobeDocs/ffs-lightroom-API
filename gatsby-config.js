@@ -92,11 +92,11 @@ module.exports = {
           },
           {
             title: 'Technical Usage Notes',
-            path: '/getting_started/usage'
+            path: '/getting_started/usage/'
           },
           {
             title: 'Storage Solutions',
-            path: '/getting_started/storage_solutions'
+            path: '/getting_started/storage_solutions/'
           }
         ]
       },
@@ -107,35 +107,35 @@ module.exports = {
         pages: [
           {
             title: 'Lightroom Quickstart',
-            path: '/guides/quickstart'
+            path: '/guides/quickstart/'
           },
           {
             title: 'Use Auto Tone',
-            path: '/guides/auto-tone'
+            path: '/guides/auto-tone/'
           },
           {
             title: 'Use Auto Straighten',
-            path: '/guides/auto-straighten'
+            path: '/guides/auto-straighten/'
           },
           {
             title: 'How to apply presets',
-            path: '/guides/apply-presets'
+            path: '/guides/apply-presets/'
           },
           {
             title: 'Apply new Lightroom edits',
-            path: '/guides/apply-edits'
+            path: '/guides/apply-edits/'
           },
           {
             title: 'How to apply XMP inline',
-            path: '/guides/apply-xmp'
+            path: '/guides/apply-xmp/'
           },
           {
             title: 'Webhook integration',
-            path: '/guides/use-webhooks'
+            path: '/guides/use-webhooks/'
           },
           {
             title: 'Get task status and results',
-            path: '/guides/get-status'
+            path: '/guides/get-status/'
           }
         ]
       }
