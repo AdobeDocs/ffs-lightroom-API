@@ -50,8 +50,9 @@ The adjustments are made using an AI/ML model that has been trained to enhance i
 
 Here is a detailed implementation example.
 
-<Accordion>
-<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
+<AccordionItem slots="heading, code" />
+
+### Request example
 
 ```shell
 curl -X POST \
@@ -74,8 +75,9 @@ curl -X POST \
 }'
 ```
 
-</AccordionItem>
-<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
+<AccordionItem slots="heading, code" />
+
+### Response example
 
 ```json
 {
@@ -86,6 +88,3 @@ curl -X POST \
     }
 }
 ```
-
-</AccordionItem>
-</Accordion>

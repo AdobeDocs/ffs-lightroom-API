@@ -30,9 +30,9 @@ twitter:
 
 Modify your first Image with Lightroom APIs
 
-||
+| | |
 | --- | --- |
-| ![a crooked picture of a watch tower](./images/autostraighten-input.jpg) <p style="text-align:center">Image</p> | ![a straightened picture of a watch tower](./images/autostraighten-output.png) <p style="text-align:center">Straightened Image</p> |
+| ![a crooked picture of a watch tower](images/autostraighten-input.jpg) \<p style="text-align:center">Image\</\p> | ![a straightened picture of a watch tower](images/autostraighten-output.png) \<p style="text-align:center">Straightened Image\</\p> |
 
 ## Prerequisites
 

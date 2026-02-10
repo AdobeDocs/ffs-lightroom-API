@@ -31,7 +31,7 @@ twitter:
   description: This is the overview page of Adobe Lightroom API
 ---
 
-<Hero slots="image, heading, text" background="rgb(45, 55, 72)"/>
+<Superhero slots="image, heading, text" background="rgb(45, 55, 72)"/>
 
 ![Lightroom Hero Image](./lightroomHero.jpg)
 

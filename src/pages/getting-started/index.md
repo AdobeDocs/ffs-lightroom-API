@@ -35,14 +35,14 @@ Automate your token generation by calling the endpoint using standard OAuth2 lib
 
 Work with your Adobe representative to get the following:
 
-- An [Adobe Developer Console][1] account.
+- An [Adobe Developer Console](https://developer.adobe.com/) account.
 - An active Enterprise contract with Firefly Services included.
-- A [project][2] with Lightroom API [OAuth Server-to-Server credentials set up][3].
-- Access to your **Client ID** and **Client Secret** from the [Adobe Developer Console project][4]. Securely store these credentials and never expose them in client-side or public code.
+- A [project](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty/) with Lightroom API [OAuth Server-to-Server credentials set up](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-s2s/).
+- Access to your **Client ID** and **Client Secret** from the [Adobe Developer Console project](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-s2s/#api-overview). Securely store these credentials and never expose them in client-side or public code.
 
 ## Retrieve an access token
 
-A temporary access token validates calls to the API. [This token can be generated directly in the Developer Console][5],
+A temporary access token validates calls to the API. [This token can be generated directly in the Developer Console](https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-s2s#generate-token),
 or by following the steps below.
 
 1. First, open a secure terminal and export your **Client ID** and **Client Secret** as environment variables so that later commands can access them:
@@ -86,10 +86,3 @@ Each access token is valid for 24 hours. To adhere to OAuth best practices, gene
 ```bash
 export LR_FF_SERVICES_ACCESS_TOKEN=<Your_Access_Token>
 ```
-
-<!-- Links -->
-[1]: https://developer.adobe.com/
-[2]: https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty/
-[3]: https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-s2s/
-[4]: https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-s2s/#api-overview
-[5]: https://developer.adobe.com/developer-console/docs/guides/services/services-add-api-oauth-s2s#generate-token
