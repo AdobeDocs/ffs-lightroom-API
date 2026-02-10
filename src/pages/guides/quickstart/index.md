@@ -158,7 +158,7 @@ export ACCESS_TOKEN=yourAccessTokenAsdf123
 
 ## Auto Straighten
 
-Next, call the [Lightroom Auto Straighten API](../../api/):
+Next, call the [Lightroom Auto Straighten API](../../api/index.md):
 
 <CodeBlock slots="heading, code" repeat="3" languages="bash, Python, JavaScript" />
 
@@ -265,7 +265,7 @@ The response will look like this:
 
 ## Get Status
 
-Next up, we will use the [Get Status](../../api/) endpoint to monitor the job status until it completes.
+Next up, we will use the [Get Status](../../api/index.md) endpoint to monitor the job status until it completes.
 
 <CodeBlock slots="heading, code" repeat="3" languages="bash, Python, JavaScript" />
 
@@ -537,4 +537,4 @@ async function checkJobStatus(jobId, accessToken) {
 
 ## Deepen Your Understanding
 
-Explore more Lightroom API options in our [Lightroom How-to guides](../../guides/) 🚀
+Explore more Lightroom API options in our [Lightroom How-to guides](../index.md) 🚀

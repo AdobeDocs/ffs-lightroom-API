@@ -40,7 +40,7 @@ As the names indicate, these event types represent events triggered by the indiv
 
 Prerequisites needed to use the Event Provider:
 
-1. In order to use the Adobe I/O Events you will need to create a project on Adobe I/O Console. [Follow the steps listed in Getting Started page to create a project](../../getting_started/) if you haven't created one yet.
+1. In order to use the Adobe I/O Events you will need to create a project on Adobe I/O Console. [Follow the steps listed in Getting Started page to create a project](../../getting_started/index.md) if you haven't created one yet.
 1. Learn [more about creating a Webhook application.](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/intro/webhooks_intro.md) This page provides all of the details you will need to build a basic application.
 1. To register the webhook to the service integration, [use the steps in the guided introduction to Adobe I/O Events](https://developer.adobe.com/events/docs/guides/#getting-started).
 
