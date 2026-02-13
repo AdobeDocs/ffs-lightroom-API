@@ -17,8 +17,8 @@
     - [API Reference](/api/index.md)
 
 - buttons:
-    - [Console](https://developer.adobe.com/console/) consoleId
     - [Submit Feedback](https://developer.adobe.com/firefly-services/docs/guides/support/)
+    - [Console](https://developer.adobe.com/console/) consoleId
 
 - subPages:
     - Getting Started header
