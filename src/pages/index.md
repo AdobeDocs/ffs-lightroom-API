@@ -33,7 +33,7 @@ twitter:
 
 <Superhero slots="image, heading, text" background="rgb(45, 55, 72)"/>
 
-![Lightroom Hero Image](./images/lightroomHero.jpg)
+![Lightroom Hero Image](./images/lightroom-hero.jpg)
 
 # Adobe Lightroom API - Firefly Services
 

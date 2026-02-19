@@ -34,7 +34,7 @@ A preset file can be created by editing an image in Lightroom and exporting it a
 To create an `.xmp` file from a set of slider values set directly by a user, [start with the empty `.xmp` file template here](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample-code/lr-sample-app/crs.xml) and add the corresponding slider values.
 
 In this example, the preset called "Aged Photo" is applied to automatically make the adjustments to achieve the desired effect.
-![A small waterfall in a forest with a waterfall in the foreground and a tree in the background, before and after](../../images/preset_example.png?raw=true "Apply Presets Example")
+![A small waterfall in a forest with a waterfall in the foreground and a tree in the background, before and after](../../images/preset-example.png?raw=true "Apply Presets Example")
 
 ## What are Presets?
 
