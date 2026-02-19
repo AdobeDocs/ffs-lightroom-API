@@ -29,7 +29,7 @@ The Auto Tone feature in Lightroom Classic utilizes an AI/ML model trained to ad
 This feature identifies elements within the image and adjusts those characteristics (like exposure, contrast, highlights, saturation, and more) to achieve striking photo results.
 
 In this example, we automatically adjusted the photo using the Auto Tone API.
-![An image of an island in the sea with Auto Tone applied, before and after](../images/autotone_example.png "Auto Tone Example")
+![An image of an island in the sea with Auto Tone applied, before and after](../../images/autotone-example.png "Auto Tone Example")
 
 ## How it works
 
@@ -50,8 +50,9 @@ The adjustments are made using an AI/ML model that has been trained to enhance i
 
 Here is a detailed implementation example.
 
-<Accordion>
-<AccordionItem header="Request example" isChevronIcon position="right" iconColor="#1473E6">
+<AccordionItem slots="heading, code" />
+
+### Request example
 
 ```shell
 curl -X POST \
@@ -74,8 +75,9 @@ curl -X POST \
 }'
 ```
 
-</AccordionItem>
-<AccordionItem header="Response example" isChevronIcon position="right" iconColor="#1473E6">
+<AccordionItem slots="heading, code" />
+
+### Response example
 
 ```json
 {
@@ -86,6 +88,3 @@ curl -X POST \
     }
 }
 ```
-
-</AccordionItem>
-</Accordion>

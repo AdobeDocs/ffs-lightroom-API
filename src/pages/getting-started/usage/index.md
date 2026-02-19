@@ -26,7 +26,7 @@ A typical Lightroom workflow initiates one or more calls to our API to modify PN
 
 All image formats compatible with Lightroom are likewise supported by the APIs. Consult the Lightroom product documentation for [a comprehensive list of these formats](https://helpx.adobe.com/lightroom-classic/help/supported-file-formats.html).
 
-[See the Storage Solutions page to generate URLs programmatically](../storage_solutions/index.md) with the most common storage services.
+[See the Storage Solutions page to generate URLs programmatically](../../getting-started/storage-solutions/index.md) with the most common storage services.
 
 ## Current limitations
 

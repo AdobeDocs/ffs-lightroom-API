@@ -1,0 +1,132 @@
+{
+  "total": 31,
+  "offset": 0,
+  "limit": 31,
+  "data": [
+    {
+      "Source": "/firefly-services/docs/lightroom",
+      "Destination": "/firefly-services/docs/lightroom/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/index",
+      "Destination": "/firefly-services/docs/lightroom/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides",
+      "Destination": "/firefly-services/docs/lightroom/guides/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/use-webhooks",
+      "Destination": "/firefly-services/docs/lightroom/guides/use-webhooks/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/use-webhooks/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/use-webhooks/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/quickstart",
+      "Destination": "/firefly-services/docs/lightroom/guides/quickstart/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/quickstart/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/quickstart/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/get-status",
+      "Destination": "/firefly-services/docs/lightroom/guides/get-status/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/get-status/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/get-status/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/auto-tone",
+      "Destination": "/firefly-services/docs/lightroom/guides/auto-tone/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/auto-tone/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/auto-tone/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/auto-straighten",
+      "Destination": "/firefly-services/docs/lightroom/guides/auto-straighten/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/auto-straighten/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/auto-straighten/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/apply-xmp",
+      "Destination": "/firefly-services/docs/lightroom/guides/apply-xmp/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/apply-xmp/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/apply-xmp/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/apply-presets",
+      "Destination": "/firefly-services/docs/lightroom/guides/apply-presets/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/apply-presets/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/apply-presets/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/apply-edits",
+      "Destination": "/firefly-services/docs/lightroom/guides/apply-edits/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/guides/apply-edits/index",
+      "Destination": "/firefly-services/docs/lightroom/guides/apply-edits/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started",
+      "Destination": "/firefly-services/docs/lightroom/getting_started/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/index",
+      "Destination": "/firefly-services/docs/lightroom/getting_started/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/usage",
+      "Destination": "/firefly-services/docs/lightroom/getting_started/usage/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/usage/index",
+      "Destination": "/firefly-services/docs/lightroom/getting_started/usage/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/storage_solutions",
+      "Destination": "/firefly-services/docs/lightroom/getting_started/storage_solutions/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/storage_solutions/index",
+      "Destination": "/firefly-services/docs/lightroom/getting_started/storage_solutions/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/api",
+      "Destination": "/firefly-services/docs/lightroom/api/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/api/index",
+      "Destination": "/firefly-services/docs/lightroom/api/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/",
+      "Destination": "/firefly-services/docs/lightroom/getting-started/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/usage/",
+      "Destination": "/firefly-services/docs/lightroom/getting-started/usage/"
+    },
+    {
+      "Source": "/firefly-services/docs/lightroom/getting_started/storage_solutions/",
+      "Destination": "/firefly-services/docs/lightroom/getting-started/storage-solutions/"
+    }
+  ],
+  ":type": "sheet"
+}

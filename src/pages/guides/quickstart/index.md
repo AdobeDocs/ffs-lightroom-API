@@ -30,9 +30,9 @@ twitter:
 
 Modify your first Image with Lightroom APIs
 
-||
+| | |
 | --- | --- |
-| ![a crooked picture of a watch tower](./images/autostraighten-input.jpg) <p style="text-align:center">Image</p> | ![a straightened picture of a watch tower](./images/autostraighten-output.png) <p style="text-align:center">Straightened Image</p> |
+| ![a crooked picture of a watch tower](../../images/autostraighten-input.jpg) \<p style="text-align:center">Image\</\p> | ![a straightened picture of a watch tower](../../images/autostraighten-output.png) \<p style="text-align:center">Straightened Image\</\p> |
 
 ## Prerequisites
 
@@ -71,7 +71,7 @@ To interact with Adobe's Lightroom APIs, you'll need to generate pre-signed URLs
 
 In this tutorial, you will need:
 
-* A pre-signed URL with a read token for the input image. Save this sample image to your cloud storage and generate a pre-signed URL: ![a crooked picture of a watch tower](./images/autostraighten-input.jpg)
+* A pre-signed URL with a read token for the input image. Save this sample image to your cloud storage and generate a pre-signed URL: ![a crooked picture of a watch tower](../../images/autostraighten-input.jpg)
 * A pre-signed URL with a read/write token for the modified image.
 
 Depending on your learning style, you may prefer to walk through this tutorial step-by-step or [jump immediately to the full source code](#full-example).
@@ -158,7 +158,7 @@ export ACCESS_TOKEN=yourAccessTokenAsdf123
 
 ## Auto Straighten
 
-Next, call the [Lightroom Auto Straighten API](../../api/):
+Next, call the [Lightroom Auto Straighten API](../../api/index.md):
 
 <CodeBlock slots="heading, code" repeat="3" languages="bash, Python, JavaScript" />
 
@@ -265,7 +265,7 @@ The response will look like this:
 
 ## Get Status
 
-Next up, we will use the [Get Status](../../api/) endpoint to monitor the job status until it completes.
+Next up, we will use the [Get Status](../../api/index.md) endpoint to monitor the job status until it completes.
 
 <CodeBlock slots="heading, code" repeat="3" languages="bash, Python, JavaScript" />
 
@@ -537,4 +537,4 @@ async function checkJobStatus(jobId, accessToken) {
 
 ## Deepen Your Understanding
 
-Explore more Lightroom API options in our [Lightroom How-to guides](../../guides/) 🚀
+Explore more Lightroom API options in our [Lightroom How-to guides](../index.md) 🚀
