@@ -70,70 +70,22 @@
                         "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
-                        "description": "Input Validation Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/InputValidationError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/InputValidationErrorResponse"
                     },
                     "402": {
-                        "description": "Trial Limit Exceeded Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/TrialLimitExceededError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/TrialLimitExceededErrorResponse"
                     },
                     "403": {
-                        "description": "Forbidden",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorForbidden"
                     },
                     "404": {
-                        "description": "Requested Resource Was Not Found",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorNotFound"
                     },
                     "409": {
-                        "description": "Unable To Upload Asset",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorUnableToUpload"
                     },
                     "410": {
-                        "description": "Asset Link Invalid",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
                 "deprecated": false
@@ -180,70 +132,22 @@
                         "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
-                        "description": "Input Validation Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/InputValidationError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/InputValidationErrorResponse"
                     },
                     "402": {
-                        "description": "Trial Limit Exceeded Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/TrialLimitExceededError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/TrialLimitExceededErrorResponse"
                     },
                     "403": {
-                        "description": "Forbidden",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorForbidden"
                     },
                     "404": {
-                        "description": "Requested Resource Was Not Found",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorNotFound"
                     },
                     "409": {
-                        "description": "Unable To Upload Asset",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorUnableToUpload"
                     },
                     "410": {
-                        "description": "Asset Link Invalid",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
                 "deprecated": false
@@ -296,70 +200,22 @@
                         "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
-                        "description": "Input Validation Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/InputValidationError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/InputValidationErrorResponse"
                     },
                     "402": {
-                        "description": "Trial Limit Exceeded Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/TrialLimitExceededError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/TrialLimitExceededErrorResponse"
                     },
                     "403": {
-                        "description": "Forbidden",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorForbidden"
                     },
                     "404": {
-                        "description": "Requested Resource Was Not Found",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorNotFound"
                     },
                     "409": {
-                        "description": "Unable To Upload Asset",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorUnableToUpload"
                     },
                     "410": {
-                        "description": "Asset Link Invalid",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
                 "deprecated": false
@@ -414,70 +270,22 @@
                         "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
-                        "description": "Input Validation Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/InputValidationError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/InputValidationErrorResponse"
                     },
                     "402": {
-                        "description": "Trial Limit Exceeded Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/TrialLimitExceededError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/TrialLimitExceededErrorResponse"
                     },
                     "403": {
-                        "description": "Forbidden",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorForbidden"
                     },
                     "404": {
-                        "description": "Requested Resource Was Not Found",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorNotFound"
                     },
                     "409": {
-                        "description": "Unable To Upload Asset",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorUnableToUpload"
                     },
                     "410": {
-                        "description": "Asset Link Invalid",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
                 "deprecated": false
@@ -529,70 +337,22 @@
                         "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
-                        "description": "Input Validation Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/InputValidationError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/InputValidationErrorResponse"
                     },
                     "402": {
-                        "description": "Trial Limit Exceeded Error",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/TrialLimitExceededError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/TrialLimitExceededErrorResponse"
                     },
                     "403": {
-                        "description": "Forbidden",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorForbidden"
                     },
                     "404": {
-                        "description": "Requested Resource Was Not Found",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorNotFound"
                     },
                     "409": {
-                        "description": "Unable To Upload Asset",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorUnableToUpload"
                     },
                     "410": {
-                        "description": "Asset Link Invalid",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobError"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
                 "deprecated": false
@@ -1245,6 +1005,163 @@
                                             "href": "https://image.adobe.io/lrService/status/ff7b0f8e-47f3-4d8f-9a8b-7a9f9b2f4c42"
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "InputValidationErrorResponse": {
+                "description": "Input Validation Error",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/InputValidationError"
+                        },
+                        "examples": {
+                            "invalidStorage": {
+                                "summary": "Invalid input",
+                                "value": {
+                                    "type": "validation_error",
+                                    "code": "invalid_input",
+                                    "title": "Input Validation Error",
+                                    "details": [
+                                        {
+                                            "allowedValues": "adobe, external, dropbox, azure",
+                                            "reason": "Invalid storage type provided."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "TrialLimitExceededErrorResponse": {
+                "description": "Trial Limit Exceeded Error",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/TrialLimitExceededError"
+                        },
+                        "examples": {
+                            "limitExceeded": {
+                                "summary": "Trial limit exceeded",
+                                "value": {
+                                    "type": "trial_limit_exceeded",
+                                    "code": "limit_exceeded",
+                                    "title": "Trial Limit Exceeded Error",
+                                    "details": "You have exceeded the limit for the free trial. To subscribe and get more API calls, check out our pricing page at https://developer.adobe.com/photoshop/api/pricing/"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "JobErrorForbidden": {
+                "description": "Forbidden",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/JobError"
+                        },
+                        "examples": {
+                            "forbidden": {
+                                "summary": "Forbidden",
+                                "value": {
+                                    "type": "error",
+                                    "code": "forbidden",
+                                    "title": "Forbidden",
+                                    "details": [
+                                        {
+                                            "name": "request",
+                                            "reason": "Access denied for this resource."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "JobErrorNotFound": {
+                "description": "Requested Resource Was Not Found",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/JobError"
+                        },
+                        "examples": {
+                            "notFound": {
+                                "summary": "Resource not found",
+                                "value": {
+                                    "type": "error",
+                                    "code": "not_found",
+                                    "title": "Requested Resource Was Not Found",
+                                    "details": [
+                                        {
+                                            "name": "resource",
+                                            "reason": "The requested resource was not found."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "JobErrorUnableToUpload": {
+                "description": "Unable To Upload Asset",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/JobError"
+                        },
+                        "examples": {
+                            "unableToUpload": {
+                                "summary": "Unable to upload asset",
+                                "value": {
+                                    "type": "error",
+                                    "code": "upload_failed",
+                                    "title": "Unable To Upload Asset",
+                                    "details": [
+                                        {
+                                            "name": "output",
+                                            "reason": "Unable to upload the output asset."
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "JobErrorAssetLinkInvalid": {
+                "description": "Asset Link Invalid",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/JobError"
+                        },
+                        "examples": {
+                            "assetLinkInvalid": {
+                                "summary": "Asset link invalid",
+                                "value": {
+                                    "type": "error",
+                                    "code": "invalid_asset_link",
+                                    "title": "Asset Link Invalid",
+                                    "details": [
+                                        {
+                                            "name": "href",
+                                            "reason": "The provided asset link is invalid or expired."
+                                        }
+                                    ]
                                 }
                             }
                         }
