@@ -44,7 +44,7 @@
                                     "summary": "Example request",
                                     "value": {
                                         "inputs": {
-                                            "href": "Replace with your presigned GET URL for the source image.",
+                                            "href": "https://storage.example.com/source-image.jpg",
                                             "storage": "external"
                                         },
                                         "options": {
@@ -53,7 +53,7 @@
                                         },
                                         "outputs": [
                                             {
-                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "href": "https://storage.example.com/output-image.jpg",
                                                 "storage": "external",
                                                 "type": "image/jpeg"
                                             }
@@ -110,12 +110,12 @@
                                     "summary": "Example request",
                                     "value": {
                                         "inputs": {
-                                            "href": "Replace with your presigned GET URL for the source image.",
+                                            "href": "https://storage.example.com/source-image.jpg",
                                             "storage": "external"
                                         },
                                         "outputs": [
                                             {
-                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "href": "https://storage.example.com/output-image.jpg",
                                                 "storage": "external",
                                                 "type": "image/jpeg"
                                             }
@@ -173,7 +173,7 @@
                                     "value": {
                                         "inputs": {
                                             "source": {
-                                                "href": "Replace with your presigned GET URL for the source image.",
+                                                "href": "https://storage.example.com/source-image.jpg",
                                                 "storage": "external"
                                             }
                                         },
@@ -183,7 +183,7 @@
                                         },
                                         "outputs": [
                                             {
-                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "href": "https://storage.example.com/output-image.jpg",
                                                 "storage": "external",
                                                 "type": "image/jpeg"
                                             }
@@ -241,19 +241,19 @@
                                     "value": {
                                         "inputs": {
                                             "source": {
-                                                "href": "Replace with your presigned GET URL for the source image.",
+                                                "href": "https://storage.example.com/source-image.jpg",
                                                 "storage": "external"
                                             },
                                             "presets": [
                                                 {
-                                                    "href": "Replace with your presigned GET URL for the preset XMP file.",
+                                                    "href": "https://storage.example.com/preset.xmp",
                                                     "storage": "external"
                                                 }
                                             ]
                                         },
                                         "outputs": [
                                             {
-                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "href": "https://storage.example.com/output-image.jpg",
                                                 "storage": "external",
                                                 "type": "image/jpeg"
                                             }
@@ -311,16 +311,16 @@
                                     "value": {
                                         "inputs": {
                                             "source": {
-                                                "href": "Replace with your presigned GET URL for the source image.",
+                                                "href": "https://storage.example.com/source-image.jpg",
                                                 "storage": "external"
                                             }
                                         },
                                         "options": {
-                                            "xmp": "Replace with your XMP content or reference."
+                                            "xmp": "{your_xmp_content}"
                                         },
                                         "outputs": [
                                             {
-                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "href": "https://storage.example.com/output-image.jpg",
                                                 "storage": "external",
                                                 "type": "image/jpeg"
                                             }
