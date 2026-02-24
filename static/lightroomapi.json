@@ -24,19 +24,12 @@
             "BearerAuth": []
         }
     ],
-    "tags": [
-        {
-            "name": "Common operations",
-            "description": "Lightroom image editing operations and job status."
-        }
-    ],
     "paths": {
         "/lrService/autoStraighten": {
             "post": {
                 "summary": "Auto-straighten",
                 "description": "Auto-straighten an image by applying the Auto Upright transformation.",
                 "operationId": "autoStraightenImage",
-                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
@@ -137,7 +130,6 @@
                 "summary": "Auto-tone",
                 "description": "Automatically correct exposure, contrast, sharpness, and saturation on an image.",
                 "operationId": "applyAutoTone",
-                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
@@ -238,7 +230,6 @@
                 "summary": "Apply Lightroom edits",
                 "description": "Apply one or more Lightroom edits (exposure, contrast, sharpness, saturation) to an image.",
                 "operationId": "applyEdits",
-                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
@@ -339,7 +330,6 @@
                 "summary": "Apply Lightroom presets",
                 "description": "Apply one or more XMP Lightroom presets to the given image, by using the given preset XMP file(s).",
                 "operationId": "applyPreset",
-                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
@@ -440,7 +430,6 @@
                 "summary": "Add XMP to image",
                 "description": "Apply XMP-based Lightroom preset to an image. XMP content is passed inline to the API.",
                 "operationId": "applyPresetFromXmpContent",
-                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
@@ -541,7 +530,6 @@
                 "summary": "Get status",
                 "description": "Get job status of a Lightroom job.",
                 "operationId": "lrJobStatus",
-                "tags": ["Common operations"],
                 "x-ffs-status-fetcher": "true",
                 "x-ffs-job-name": "LrAsyncJob",
                 "parameters": [
