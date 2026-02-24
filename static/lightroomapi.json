@@ -12,7 +12,7 @@
     "servers": [
         {
             "url": "https://image.adobe.io",
-            "description": "Adobe Lightroom Production Server",
+            "description": "Adobe Lightroom Production Server.",
             "variables": {}
         }
     ],
@@ -24,16 +24,23 @@
             "BearerAuth": []
         }
     ],
+    "tags": [
+        {
+            "name": "Common operations",
+            "description": "Lightroom image editing operations and job status."
+        }
+    ],
     "paths": {
         "/lrService/autoStraighten": {
             "post": {
                 "summary": "Auto-straighten",
                 "description": "Auto-straighten an image by applying the Auto Upright transformation.",
                 "operationId": "autoStraightenImage",
+                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for auto straighten.",
+                    "description": "Request body for the auto straighten operation.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -78,7 +85,7 @@
                         }
                     },
                     "403": {
-                        "description": "Unauthorized",
+                        "description": "Forbidden",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -130,10 +137,11 @@
                 "summary": "Auto-tone",
                 "description": "Automatically correct exposure, contrast, sharpness, and saturation on an image.",
                 "operationId": "applyAutoTone",
+                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for auto tone.",
+                    "description": "Request body for the auto tone operation.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -178,7 +186,7 @@
                         }
                     },
                     "403": {
-                        "description": "Unauthorized",
+                        "description": "Forbidden",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -230,10 +238,11 @@
                 "summary": "Apply Lightroom edits",
                 "description": "Apply one or more Lightroom edits (exposure, contrast, sharpness, saturation) to an image.",
                 "operationId": "applyEdits",
+                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for edit.",
+                    "description": "Request body for the edit operation.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -278,7 +287,7 @@
                         }
                     },
                     "403": {
-                        "description": "Unauthorized",
+                        "description": "Forbidden",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -330,10 +339,11 @@
                 "summary": "Apply Lightroom presets",
                 "description": "Apply one or more XMP Lightroom presets to the given image, by using the given preset XMP file(s).",
                 "operationId": "applyPreset",
+                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for presets.",
+                    "description": "Request body for the presets operation.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -378,7 +388,7 @@
                         }
                     },
                     "403": {
-                        "description": "Unauthorized",
+                        "description": "Forbidden",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -430,10 +440,11 @@
                 "summary": "Add XMP to image",
                 "description": "Apply XMP-based Lightroom preset to an image. XMP content is passed inline to the API.",
                 "operationId": "applyPresetFromXmpContent",
+                "tags": ["Common operations"],
                 "x-ffs-async-job": "true",
                 "x-ffs-job-status-fetcher": "lrJobStatus",
                 "requestBody": {
-                    "description": "Request body for XMP.",
+                    "description": "Request body for the XMP operation.",
                     "content": {
                         "application/json": {
                             "schema": {
@@ -478,7 +489,7 @@
                         }
                     },
                     "403": {
-                        "description": "Unauthorized",
+                        "description": "Forbidden",
                         "headers": {},
                         "content": {
                             "application/json": {
@@ -530,13 +541,14 @@
                 "summary": "Get status",
                 "description": "Get job status of a Lightroom job.",
                 "operationId": "lrJobStatus",
+                "tags": ["Common operations"],
                 "x-ffs-status-fetcher": "true",
                 "x-ffs-job-name": "LrAsyncJob",
                 "parameters": [
                     {
                         "name": "jobId",
                         "in": "path",
-                        "description": "The job to get status for",
+                        "description": "Identifier of the job to get status for.",
                         "required": true,
                         "schema": {
                             "type": "string"
@@ -561,6 +573,17 @@
         }
     },
     "components": {
+        "securitySchemes": {
+            "BearerAuth": {
+                "type": "http",
+                "scheme": "bearer"
+            },
+            "ApiKeyAuth": {
+                "type": "apiKey",
+                "name": "x-api-key",
+                "in": "header"
+            }
+        },
         "schemas": {
             "JobError": {
                 "title": "JobError",
@@ -568,15 +591,15 @@
                 "properties": {
                     "type": {
                         "type": "string",
-                        "description": "error type"
+                        "description": "Type of the error."
                     },
                     "code": {
                         "type": "string",
-                        "description": "error code"
+                        "description": "The error code."
                     },
                     "title": {
                         "type": "string",
-                        "description": "error description"
+                        "description": "Description of the error."
                     },
                     "details": {
                         "type": "array",
@@ -594,15 +617,15 @@
                 "properties": {
                     "type": {
                         "type": "string",
-                        "description": "error type"
+                        "description": "Type of the error."
                     },
                     "code": {
                         "type": "string",
-                        "description": "error code"
+                        "description": "The error code."
                     },
                     "title": {
                         "type": "string",
-                        "description": "error description"
+                        "description": "Description of the error."
                     },
                     "details": {
                         "type": "array",
@@ -620,19 +643,19 @@
                 "properties": {
                     "type": {
                         "type": "string",
-                        "description": "error type"
+                        "description": "Type of the error."
                     },
                     "code": {
                         "type": "string",
-                        "description": "error code"
+                        "description": "The error code."
                     },
                     "title": {
                         "type": "string",
-                        "description": "error description"
+                        "description": "Description of the error."
                     },
                     "details": {
                         "type": "string",
-                        "description": "Details of the error returned",
+                        "description": "Details of the error returned.",
                         "default": "You have exceeded the limit for the free trial. To subscribe and get more API calls, check out our pricing page at https://developer.adobe.com/photoshop/api/pricing/"
                     }
                 },
@@ -644,12 +667,12 @@
                 "properties": {
                     "allowedValues": {
                         "type": "string",
-                        "description": "Name of the input parameter",
+                        "description": "Name of the input parameter.",
                         "default": "adobe, external, dropbox, azure"
                     },
                     "reason": {
                         "type": "string",
-                        "description": "Reason for the error"
+                        "description": "Reason for the error."
                     }
                 },
                 "description": "Details of the input validation error returned."
@@ -661,7 +684,7 @@
                 "properties": {
                     "href": {
                         "type": "string",
-                        "description": "Presigned GET URL"
+                        "description": "Pre-signed GET URL for the source asset."
                     },
                     "storage": {
                         "$ref": "#/components/schemas/StorageType"
@@ -694,7 +717,7 @@
                 "properties": {
                     "href": {
                         "type": "string",
-                        "description": "Presigned POST URL to the output file."
+                        "description": "Pre-signed POST URL to the output file."
                     },
                     "storage": {
                         "$ref": "#/components/schemas/StorageType"
@@ -1114,17 +1137,6 @@
                     "Tungsten"
                 ],
                 "type": "string"
-            }
-        },
-        "securitySchemes": {
-            "BearerAuth": {
-                "type": "http",
-                "scheme": "bearer"
-            },
-            "ApiKeyAuth": {
-                "type": "apiKey",
-                "name": "x-api-key",
-                "in": "header"
             }
         }
     }
