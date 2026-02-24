@@ -3,10 +3,9 @@
     "info": {
         "title": "Adobe Lightroom API",
         "description": "This is the API reference documentation for Firefly's Lightroom API.",
-        "contact": {
-            "name": "Adobe Lightroom API Support",
-            "url": "https://developer.adobe.com/photoshop/photoshop-api-docs/api/#tag/Lightroom",
-            "email": "mantis@adobe.com"
+        "license": {
+            "name": "Adobe Creative API License",
+            "url": "https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCreativeAPI-WW-2024v2.pdf"
         },
         "version": "1.0"
     },
