@@ -515,7 +515,7 @@
                 "properties": {
                     "allowedValues": {
                         "type": "string",
-                        "description": "Name of the input parameter.",
+                        "description": "Comma-separated list of allowed values for the input parameter.",
                         "default": "adobe, external, dropbox, azure"
                     },
                     "reason": {
@@ -576,14 +576,14 @@
                     "overwrite": {
                         "type": "boolean",
                         "default": true,
-                        "description": "Determines if the output file should be overwritten if it already exists. This flag is used only when `storage` is 'adobe'."
+                        "description": "Determines if the output file should be overwritten if it already exists. This flag is used only for Adobe cloud storage."
                     },
                     "quality": {
                         "maximum": 12,
                         "minimum": 1,
                         "type": "integer",
                         "default": 12,
-                        "description": "Quality of the JPEG outputs (will be ignored for other output types). Ranges from 0 to 12, with 12 as the highest quality."
+                        "description": "Quality of the JPEG outputs (will be ignored for other output types). Ranges from 1 to 12, with 12 as the highest quality."
                     }
                 }
             },
@@ -665,7 +665,7 @@
                 "properties": {
                     "inputs": {
                         "type": "object",
-                        "description": "A hash describing an input image to edit. The input object will be one of 'external', 'adobe', 'azure', or 'dropbox'.",
+                        "description": "A hash describing an input image to edit. The input object will be one of 'external', 'azure', or 'dropbox'.",
                         "required": ["source"],
                         "properties": {
                             "source": {
@@ -742,7 +742,7 @@
                     },
                     "reason": {
                         "type": "string",
-                        "description": "Error message."
+                        "description": "Reason for the error."
                     }
                 },
                 "description": "Details of the error returned."
@@ -760,7 +760,7 @@
                         "items": {
                             "$ref": "#/components/schemas/StorageDetails"
                         },
-                        "description": "An array describing the list of presets to apply. The preset objects will either be one of 'external', 'adobe', 'azure', or 'dropbox'."
+                        "description": "An array describing the list of presets to apply. The preset objects will be one of 'external', 'azure', or 'dropbox'."
                     }
                 }
             },
@@ -1053,7 +1053,7 @@
                                     "type": "trial_limit_exceeded",
                                     "code": "limit_exceeded",
                                     "title": "Trial Limit Exceeded Error",
-                                    "details": "You have exceeded the limit for the free trial. To subscribe and get more API calls, check out our pricing page at https://developer.adobe.com/photoshop/api/pricing/"
+                                    "details": "You have exceeded the limit for the free trial."
                                 }
                             }
                         }
