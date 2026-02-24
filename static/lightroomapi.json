@@ -38,6 +38,28 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/AutoStraightenImageRequest"
+                            },
+                            "examples": {
+                                "default": {
+                                    "summary": "Example request",
+                                    "value": {
+                                        "inputs": {
+                                            "href": "Replace with your presigned GET URL for the source image.",
+                                            "storage": "external"
+                                        },
+                                        "options": {
+                                            "uprightMode": "auto",
+                                            "constrainCrop": true
+                                        },
+                                        "outputs": [
+                                            {
+                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "storage": "external",
+                                                "type": "image/jpeg"
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         }
                     },
@@ -45,15 +67,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "Accepted",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobStatusLinkResponse"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
                         "description": "Input Validation Error",
@@ -138,6 +152,24 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/ApplyAutoToneRequest"
+                            },
+                            "examples": {
+                                "default": {
+                                    "summary": "Example request",
+                                    "value": {
+                                        "inputs": {
+                                            "href": "Replace with your presigned GET URL for the source image.",
+                                            "storage": "external"
+                                        },
+                                        "outputs": [
+                                            {
+                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "storage": "external",
+                                                "type": "image/jpeg"
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         }
                     },
@@ -145,15 +177,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "Accepted",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobStatusLinkResponse"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
                         "description": "Input Validation Error",
@@ -238,6 +262,30 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/ApplyEditsRequest"
+                            },
+                            "examples": {
+                                "default": {
+                                    "summary": "Example request",
+                                    "value": {
+                                        "inputs": {
+                                            "source": {
+                                                "href": "Replace with your presigned GET URL for the source image.",
+                                                "storage": "external"
+                                            }
+                                        },
+                                        "options": {
+                                            "Exposure": 0.5,
+                                            "Contrast": 10
+                                        },
+                                        "outputs": [
+                                            {
+                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "storage": "external",
+                                                "type": "image/jpeg"
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         }
                     },
@@ -245,15 +293,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "Accepted",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobStatusLinkResponse"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
                         "description": "Input Validation Error",
@@ -338,6 +378,32 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/ApplyPresetRequest"
+                            },
+                            "examples": {
+                                "default": {
+                                    "summary": "Example request",
+                                    "value": {
+                                        "inputs": {
+                                            "source": {
+                                                "href": "Replace with your presigned GET URL for the source image.",
+                                                "storage": "external"
+                                            },
+                                            "presets": [
+                                                {
+                                                    "href": "Replace with your presigned GET URL for the preset XMP file.",
+                                                    "storage": "external"
+                                                }
+                                            ]
+                                        },
+                                        "outputs": [
+                                            {
+                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "storage": "external",
+                                                "type": "image/jpeg"
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         }
                     },
@@ -345,15 +411,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "Accepted",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobStatusLinkResponse"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
                         "description": "Input Validation Error",
@@ -438,6 +496,29 @@
                         "application/json": {
                             "schema": {
                                 "$ref": "#/components/schemas/ApplyPresetFromXmpContentRequest"
+                            },
+                            "examples": {
+                                "default": {
+                                    "summary": "Example request",
+                                    "value": {
+                                        "inputs": {
+                                            "source": {
+                                                "href": "Replace with your presigned GET URL for the source image.",
+                                                "storage": "external"
+                                            }
+                                        },
+                                        "options": {
+                                            "xmp": "Replace with your XMP content or reference."
+                                        },
+                                        "outputs": [
+                                            {
+                                                "href": "Replace with your presigned POST URL for the output image.",
+                                                "storage": "external",
+                                                "type": "image/jpeg"
+                                            }
+                                        ]
+                                    }
+                                }
                             }
                         }
                     },
@@ -445,15 +526,7 @@
                 },
                 "responses": {
                     "202": {
-                        "description": "Accepted",
-                        "headers": {},
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/JobStatusLinkResponse"
-                                }
-                            }
-                        }
+                        "$ref": "#/components/responses/JobAccepted"
                     },
                     "400": {
                         "description": "Input Validation Error",
@@ -551,6 +624,33 @@
                             "application/json": {
                                 "schema": {
                                     "$ref": "#/components/schemas/LrJobApiResponse"
+                                },
+                                "examples": {
+                                    "jobSucceeded": {
+                                        "summary": "Job succeeded",
+                                        "value": {
+                                            "jobId": "ff7b0f8e-47f3-4d8f-9a8b-7a9f9b2f4c42",
+                                            "created": "2024-01-15T10:30:00.000Z",
+                                            "modified": "2024-01-15T10:30:05.000Z",
+                                            "outputs": [
+                                                {
+                                                    "input": "/path/to/source.jpg",
+                                                    "status": "succeeded",
+                                                    "_links": {
+                                                        "self": {
+                                                            "href": "https://storage.example.com/result.jpg",
+                                                            "storage": "external"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "_links": {
+                                                "self": {
+                                                    "href": "https://image.adobe.io/lrService/status/ff7b0f8e-47f3-4d8f-9a8b-7a9f9b2f4c42"
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -1125,6 +1225,31 @@
                     "Tungsten"
                 ],
                 "type": "string"
+            }
+        },
+        "responses": {
+            "JobAccepted": {
+                "description": "Accepted",
+                "headers": {},
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/JobStatusLinkResponse"
+                        },
+                        "examples": {
+                            "jobAccepted": {
+                                "summary": "Job accepted",
+                                "value": {
+                                    "_links": {
+                                        "self": {
+                                            "href": "https://image.adobe.io/lrService/status/ff7b0f8e-47f3-4d8f-9a8b-7a9f9b2f4c42"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
