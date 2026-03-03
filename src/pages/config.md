@@ -17,7 +17,7 @@
     - [API Reference](/api/index.md)
 
 - buttons:
-    - [Submit Feedback](https://developer.adobe.com/firefly-services/docs/guides/support/)
+    - [Support](https://airtable.com/appu5RTWgdM95jynx/pagyuT1qspNJcPU2E/form)
     - [Console](https://developer.adobe.com/console/) consoleId
 
 - subPages:
