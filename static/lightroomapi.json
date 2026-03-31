@@ -18,10 +18,8 @@
     ],
     "security": [
         {
-            "ApiKeyAuth": []
-        },
-        {
-            "BearerAuth": []
+            "AccessToken": [],
+            "X-Api-Key": []
         }
     ],
     "paths": {
@@ -422,14 +420,16 @@
     },
     "components": {
         "securitySchemes": {
-            "BearerAuth": {
+            "AccessToken": {
                 "type": "http",
-                "scheme": "bearer"
+                "scheme": "bearer",
+                "description": "The Adobe-generated access token, S2S format."
             },
-            "ApiKeyAuth": {
+            "X-Api-Key": {
                 "type": "apiKey",
                 "name": "x-api-key",
-                "in": "header"
+                "in": "header",
+                "description": "The client ID for authentication."
             }
         },
         "schemas": {
@@ -528,7 +528,10 @@
             "StorageDetails": {
                 "title": "StorageDetails",
                 "type": "object",
-                "required": ["href", "storage"],
+                "required": [
+                    "href",
+                    "storage"
+                ],
                 "properties": {
                     "href": {
                         "type": "string",
@@ -561,7 +564,11 @@
             "LrOutputDetails": {
                 "title": "LrOutputDetails",
                 "type": "object",
-                "required": ["href", "storage", "type"],
+                "required": [
+                    "href",
+                    "storage",
+                    "type"
+                ],
                 "properties": {
                     "href": {
                         "type": "string",
@@ -589,7 +596,12 @@
             },
             "ImageFormatType": {
                 "title": "ImageFormatType",
-                "enum": ["image/jpeg", "image/png", "image/x-adobe-dng", "application/rdf+xml"],
+                "enum": [
+                    "image/jpeg",
+                    "image/png",
+                    "image/x-adobe-dng",
+                    "application/rdf+xml"
+                ],
                 "type": "string",
                 "description": "Desired output image format."
             },
@@ -624,7 +636,10 @@
             "AutoStraightenImageRequest": {
                 "title": "AutoStraightenImageRequest",
                 "type": "object",
-                "required": ["inputs", "outputs"],
+                "required": [
+                    "inputs",
+                    "outputs"
+                ],
                 "properties": {
                     "inputs": {
                         "$ref": "#/components/schemas/StorageDetails"
@@ -644,7 +659,10 @@
             "ApplyAutoToneRequest": {
                 "title": "ApplyAutoToneRequest",
                 "type": "object",
-                "required": ["inputs", "outputs"],
+                "required": [
+                    "inputs",
+                    "outputs"
+                ],
                 "properties": {
                     "inputs": {
                         "$ref": "#/components/schemas/StorageDetails"
@@ -661,12 +679,18 @@
             "ApplyEditsRequest": {
                 "title": "ApplyEditsRequest",
                 "type": "object",
-                "required": ["inputs", "options", "outputs"],
+                "required": [
+                    "inputs",
+                    "options",
+                    "outputs"
+                ],
                 "properties": {
                     "inputs": {
                         "type": "object",
                         "description": "A hash describing an input image to edit. The input object will be one of 'external', 'azure', or 'dropbox'.",
-                        "required": ["source"],
+                        "required": [
+                            "source"
+                        ],
                         "properties": {
                             "source": {
                                 "$ref": "#/components/schemas/StorageDetails"
@@ -688,7 +712,10 @@
             "ApplyPresetRequest": {
                 "title": "ApplyPresetRequest",
                 "type": "object",
-                "required": ["inputs", "outputs"],
+                "required": [
+                    "inputs",
+                    "outputs"
+                ],
                 "properties": {
                     "inputs": {
                         "$ref": "#/components/schemas/ApplyPresetInput"
@@ -705,7 +732,11 @@
             "ApplyPresetFromXmpContentRequest": {
                 "title": "ApplyPresetFromXmpContentRequest",
                 "type": "object",
-                "required": ["inputs", "options", "outputs"],
+                "required": [
+                    "inputs",
+                    "options",
+                    "outputs"
+                ],
                 "properties": {
                     "inputs": {
                         "$ref": "#/components/schemas/ApplyPresetXmpInput"
@@ -725,7 +756,9 @@
             "ApplyPresetXmpInput": {
                 "title": "ApplyPresetXmpInput",
                 "type": "object",
-                "required": ["source"],
+                "required": [
+                    "source"
+                ],
                 "properties": {
                     "source": {
                         "$ref": "#/components/schemas/StorageDetails"
@@ -750,7 +783,10 @@
             "ApplyPresetInput": {
                 "title": "ApplyPresetInput",
                 "type": "object",
-                "required": ["source", "presets"],
+                "required": [
+                    "source",
+                    "presets"
+                ],
                 "properties": {
                     "source": {
                         "$ref": "#/components/schemas/StorageDetails"
@@ -775,7 +811,9 @@
             },
             "AutoStraightOptions": {
                 "title": "AutoStraightOptions",
-                "required": ["uprightMode"],
+                "required": [
+                    "uprightMode"
+                ],
                 "type": "object",
                 "properties": {
                     "uprightMode": {
@@ -907,7 +945,9 @@
                 "title": "ApplyPresetXmpOptions",
                 "description": "Options for applying a preset XMP to an image.",
                 "type": "object",
-                "required": ["xmp"],
+                "required": [
+                    "xmp"
+                ],
                 "properties": {
                     "xmp": {
                         "type": "string",
@@ -954,19 +994,33 @@
             },
             "JobStatus": {
                 "title": "JobStatus",
-                "enum": ["pending", "running", "succeeded", "failed"],
+                "enum": [
+                    "pending",
+                    "running",
+                    "succeeded",
+                    "failed"
+                ],
                 "type": "string",
                 "description": "Status of the job."
             },
             "StorageType": {
                 "title": "StorageType",
-                "enum": ["external", "azure", "dropbox"],
+                "enum": [
+                    "external",
+                    "azure",
+                    "dropbox"
+                ],
                 "type": "string",
                 "description": "Storage location."
             },
             "UprightMode": {
                 "title": "UprightMode",
-                "enum": ["auto", "full", "level", "vertical"],
+                "enum": [
+                    "auto",
+                    "full",
+                    "level",
+                    "vertical"
+                ],
                 "type": "string",
                 "description": "The upright mode to use. If you have the options block, then this is a required field. If options block is not specified, then the appropriate upright mode will automatically be selected."
             },
