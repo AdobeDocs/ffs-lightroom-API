@@ -86,7 +86,7 @@
                         "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
-                "deprecated": false
+                "deprecated": true
             }
         },
         "/lrService/autoTone": {
@@ -148,7 +148,7 @@
                         "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
-                "deprecated": false
+                "deprecated": true
             }
         },
         "/lrService/edit": {
@@ -216,7 +216,7 @@
                         "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
-                "deprecated": false
+                "deprecated": true
             }
         },
         "/lrService/presets": {
@@ -286,7 +286,7 @@
                         "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
-                "deprecated": false
+                "deprecated": true
             }
         },
         "/lrService/xmp": {
@@ -353,7 +353,7 @@
                         "$ref": "#/components/responses/JobErrorAssetLinkInvalid"
                     }
                 },
-                "deprecated": false
+                "deprecated": true
             }
         },
         "/lrService/status/{jobId}": {
@@ -414,7 +414,7 @@
                         }
                     }
                 },
-                "deprecated": false
+                "deprecated": true
             }
         }
     },

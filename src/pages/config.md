@@ -24,6 +24,8 @@
     - [Console](https://developer.adobe.com/console/) consoleId
 
 - subPages:
+    - What's New header
+    - [Lightroom API Deprecation](/getting-started/deprecation-announcement/index.md)
     - Getting Started header
     - [Authentication](/getting-started/index.md)
     - [Technical Usage Notes](/getting-started/usage/index.md)

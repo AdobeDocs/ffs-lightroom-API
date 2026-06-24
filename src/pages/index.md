@@ -39,6 +39,14 @@ twitter:
 
 Unlock the potential of Lightroom through an easy-to-use RESTful API.
 
+<Announcement slots="heading, text, button" variant="primary" backgroundColor="background-color-gray"/>
+
+#### Lightroom API End-of-Life Notice
+
+The Lightroom API will reach end-of-life on **July 31, 2026**.
+
+- [View Deprecation Announcement](/getting-started/deprecation-announcement/index.md)
+
 ## Overview
 
 Welcome to the Adobe Lightroom API, now integrated into Firefly Services. Our API follows REST-like principles, utilizing standard HTTP response codes, verbs, and authentication methods that return JSON-encoded responses. While the examples provided are in cURL, feel free to develop your application in any preferred language.
